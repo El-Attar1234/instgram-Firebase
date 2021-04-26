@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D213B540263693DF002FF2D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B53F263693DF002FF2D1 /* AppDelegate.swift */; };
+		D213B542263693DF002FF2D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B541263693DF002FF2D1 /* SceneDelegate.swift */; };
+		D213B544263693DF002FF2D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B543263693DF002FF2D1 /* ViewController.swift */; };
+		D213B54A263693DF002FF2D1 /* Instgram_Firebase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D213B548263693DF002FF2D1 /* Instgram_Firebase.xcdatamodeld */; };
+		D213B54C263693E3002FF2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D213B54B263693E3002FF2D1 /* Assets.xcassets */; };
+		D213B54F263693E3002FF2D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D213B54D263693E3002FF2D1 /* LaunchScreen.storyboard */; };
+		D213B55A263693E3002FF2D1 /* Instgram_FirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B559263693E3002FF2D1 /* Instgram_FirebaseTests.swift */; };
+		D213B565263693E4002FF2D1 /* Instgram_FirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B564263693E4002FF2D1 /* Instgram_FirebaseUITests.swift */; };
+		D213B5742636990D002FF2D1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B5732636990D002FF2D1 /* SignUpVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D213B556263693E3002FF2D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D213B534263693DF002FF2D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D213B53B263693DF002FF2D1;
+			remoteInfo = "Instgram-Firebase";
+		};
+		D213B561263693E4002FF2D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D213B534263693DF002FF2D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D213B53B263693DF002FF2D1;
+			remoteInfo = "Instgram-Firebase";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D213B53C263693DF002FF2D1 /* Instgram-Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instgram-Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D213B53F263693DF002FF2D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D213B541263693DF002FF2D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D213B543263693DF002FF2D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D213B549263693DF002FF2D1 /* Instgram_Firebase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instgram_Firebase.xcdatamodel; sourceTree = "<group>"; };
+		D213B54B263693E3002FF2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D213B54E263693E3002FF2D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D213B550263693E3002FF2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D213B555263693E3002FF2D1 /* Instgram-FirebaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Instgram-FirebaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D213B559263693E3002FF2D1 /* Instgram_FirebaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instgram_FirebaseTests.swift; sourceTree = "<group>"; };
+		D213B55B263693E3002FF2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D213B560263693E4002FF2D1 /* Instgram-FirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Instgram-FirebaseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D213B564263693E4002FF2D1 /* Instgram_FirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instgram_FirebaseUITests.swift; sourceTree = "<group>"; };
+		D213B566263693E4002FF2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D213B5732636990D002FF2D1 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D213B539263693DF002FF2D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D213B552263693E3002FF2D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D213B55D263693E4002FF2D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D213B533263693DF002FF2D1 = {
+			isa = PBXGroup;
+			children = (
+				D213B53E263693DF002FF2D1 /* Instgram-Firebase */,
+				D213B558263693E3002FF2D1 /* Instgram-FirebaseTests */,
+				D213B563263693E4002FF2D1 /* Instgram-FirebaseUITests */,
+				D213B53D263693DF002FF2D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D213B53D263693DF002FF2D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D213B53C263693DF002FF2D1 /* Instgram-Firebase.app */,
+				D213B555263693E3002FF2D1 /* Instgram-FirebaseTests.xctest */,
+				D213B560263693E4002FF2D1 /* Instgram-FirebaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D213B53E263693DF002FF2D1 /* Instgram-Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				D213B572263698E1002FF2D1 /* screens */,
+				D213B53F263693DF002FF2D1 /* AppDelegate.swift */,
+				D213B541263693DF002FF2D1 /* SceneDelegate.swift */,
+				D213B543263693DF002FF2D1 /* ViewController.swift */,
+				D213B54B263693E3002FF2D1 /* Assets.xcassets */,
+				D213B54D263693E3002FF2D1 /* LaunchScreen.storyboard */,
+				D213B550263693E3002FF2D1 /* Info.plist */,
+				D213B548263693DF002FF2D1 /* Instgram_Firebase.xcdatamodeld */,
+			);
+			path = "Instgram-Firebase";
+			sourceTree = "<group>";
+		};
+		D213B558263693E3002FF2D1 /* Instgram-FirebaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				D213B559263693E3002FF2D1 /* Instgram_FirebaseTests.swift */,
+				D213B55B263693E3002FF2D1 /* Info.plist */,
+			);
+			path = "Instgram-FirebaseTests";
+			sourceTree = "<group>";
+		};
+		D213B563263693E4002FF2D1 /* Instgram-FirebaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D213B564263693E4002FF2D1 /* Instgram_FirebaseUITests.swift */,
+				D213B566263693E4002FF2D1 /* Info.plist */,
+			);
+			path = "Instgram-FirebaseUITests";
+			sourceTree = "<group>";
+		};
+		D213B572263698E1002FF2D1 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				D213B5732636990D002FF2D1 /* SignUpVC.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D213B53B263693DF002FF2D1 /* Instgram-Firebase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D213B569263693E4002FF2D1 /* Build configuration list for PBXNativeTarget "Instgram-Firebase" */;
+			buildPhases = (
+				D213B538263693DF002FF2D1 /* Sources */,
+				D213B539263693DF002FF2D1 /* Frameworks */,
+				D213B53A263693DF002FF2D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Instgram-Firebase";
+			productName = "Instgram-Firebase";
+			productReference = D213B53C263693DF002FF2D1 /* Instgram-Firebase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D213B554263693E3002FF2D1 /* Instgram-FirebaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D213B56C263693E4002FF2D1 /* Build configuration list for PBXNativeTarget "Instgram-FirebaseTests" */;
+			buildPhases = (
+				D213B551263693E3002FF2D1 /* Sources */,
+				D213B552263693E3002FF2D1 /* Frameworks */,
+				D213B553263693E3002FF2D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D213B557263693E3002FF2D1 /* PBXTargetDependency */,
+			);
+			name = "Instgram-FirebaseTests";
+			productName = "Instgram-FirebaseTests";
+			productReference = D213B555263693E3002FF2D1 /* Instgram-FirebaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D213B55F263693E4002FF2D1 /* Instgram-FirebaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D213B56F263693E4002FF2D1 /* Build configuration list for PBXNativeTarget "Instgram-FirebaseUITests" */;
+			buildPhases = (
+				D213B55C263693E4002FF2D1 /* Sources */,
+				D213B55D263693E4002FF2D1 /* Frameworks */,
+				D213B55E263693E4002FF2D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D213B562263693E4002FF2D1 /* PBXTargetDependency */,
+			);
+			name = "Instgram-FirebaseUITests";
+			productName = "Instgram-FirebaseUITests";
+			productReference = D213B560263693E4002FF2D1 /* Instgram-FirebaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D213B534263693DF002FF2D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = ITI;
+				TargetAttributes = {
+					D213B53B263693DF002FF2D1 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					D213B554263693E3002FF2D1 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = D213B53B263693DF002FF2D1;
+					};
+					D213B55F263693E4002FF2D1 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = D213B53B263693DF002FF2D1;
+					};
+				};
+			};
+			buildConfigurationList = D213B537263693DF002FF2D1 /* Build configuration list for PBXProject "Instgram-Firebase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D213B533263693DF002FF2D1;
+			productRefGroup = D213B53D263693DF002FF2D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D213B53B263693DF002FF2D1 /* Instgram-Firebase */,
+				D213B554263693E3002FF2D1 /* Instgram-FirebaseTests */,
+				D213B55F263693E4002FF2D1 /* Instgram-FirebaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D213B53A263693DF002FF2D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D213B54F263693E3002FF2D1 /* LaunchScreen.storyboard in Resources */,
+				D213B54C263693E3002FF2D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D213B553263693E3002FF2D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D213B55E263693E4002FF2D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D213B538263693DF002FF2D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D213B544263693DF002FF2D1 /* ViewController.swift in Sources */,
+				D213B540263693DF002FF2D1 /* AppDelegate.swift in Sources */,
+				D213B542263693DF002FF2D1 /* SceneDelegate.swift in Sources */,
+				D213B5742636990D002FF2D1 /* SignUpVC.swift in Sources */,
+				D213B54A263693DF002FF2D1 /* Instgram_Firebase.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D213B551263693E3002FF2D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D213B55A263693E3002FF2D1 /* Instgram_FirebaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D213B55C263693E4002FF2D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D213B565263693E4002FF2D1 /* Instgram_FirebaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D213B557263693E3002FF2D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D213B53B263693DF002FF2D1 /* Instgram-Firebase */;
+			targetProxy = D213B556263693E3002FF2D1 /* PBXContainerItemProxy */;
+		};
+		D213B562263693E4002FF2D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D213B53B263693DF002FF2D1 /* Instgram-Firebase */;
+			targetProxy = D213B561263693E4002FF2D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D213B54D263693E3002FF2D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D213B54E263693E3002FF2D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D213B567263693E4002FF2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D213B568263693E4002FF2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D213B56A263693E4002FF2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = "Instgram-Firebase/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.Instgram-Firebase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D213B56B263693E4002FF2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = "Instgram-Firebase/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.Instgram-Firebase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D213B56D263693E4002FF2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = "Instgram-FirebaseTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.Instgram-FirebaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instgram-Firebase.app/Instgram-Firebase";
+			};
+			name = Debug;
+		};
+		D213B56E263693E4002FF2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = "Instgram-FirebaseTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.Instgram-FirebaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instgram-Firebase.app/Instgram-Firebase";
+			};
+			name = Release;
+		};
+		D213B570263693E4002FF2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = "Instgram-FirebaseUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.Instgram-FirebaseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Instgram-Firebase";
+			};
+			name = Debug;
+		};
+		D213B571263693E4002FF2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = "Instgram-FirebaseUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.Instgram-FirebaseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Instgram-Firebase";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D213B537263693DF002FF2D1 /* Build configuration list for PBXProject "Instgram-Firebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D213B567263693E4002FF2D1 /* Debug */,
+				D213B568263693E4002FF2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D213B569263693E4002FF2D1 /* Build configuration list for PBXNativeTarget "Instgram-Firebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D213B56A263693E4002FF2D1 /* Debug */,
+				D213B56B263693E4002FF2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D213B56C263693E4002FF2D1 /* Build configuration list for PBXNativeTarget "Instgram-FirebaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D213B56D263693E4002FF2D1 /* Debug */,
+				D213B56E263693E4002FF2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D213B56F263693E4002FF2D1 /* Build configuration list for PBXNativeTarget "Instgram-FirebaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D213B570263693E4002FF2D1 /* Debug */,
+				D213B571263693E4002FF2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D213B548263693DF002FF2D1 /* Instgram_Firebase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D213B549263693DF002FF2D1 /* Instgram_Firebase.xcdatamodel */,
+			);
+			currentVersion = D213B549263693DF002FF2D1 /* Instgram_Firebase.xcdatamodel */;
+			path = Instgram_Firebase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D213B534263693DF002FF2D1 /* Project object */;
+}
