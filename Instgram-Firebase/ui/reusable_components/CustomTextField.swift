@@ -27,11 +27,11 @@ class CustomTextField: UITextField {
     private func configure (){
    
                translatesAutoresizingMaskIntoConstraints=false
-        backgroundColor = UIColor(white: 0, alpha: 0.1)
+               backgroundColor = UIColor(white: 0, alpha: 0.1)
                //for text
                layer.cornerRadius          = 10
                layer.borderWidth           = 2
-        layer.borderColor           = .init(srgbRed: 100/255, green: 100/255, blue: 100/255, alpha: 1)   //UIColor.systemGray4.cgColor
+               layer.borderColor           = UIColor.colorWithRGB(red: 100, green: 100, blue: 100).cgColor
                borderStyle                = .roundedRect
                textColor                   = .black
                tintColor                   = .black
