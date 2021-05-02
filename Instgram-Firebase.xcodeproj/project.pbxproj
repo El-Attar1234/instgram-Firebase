@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		D213B565263693E4002FF2D1 /* Instgram_FirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B564263693E4002FF2D1 /* Instgram_FirebaseUITests.swift */; };
 		D213B5742636990D002FF2D1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B5732636990D002FF2D1 /* SignUpVC.swift */; };
 		D25CCC36263748E100F885C5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25CCC35263748E100F885C5 /* CustomTextField.swift */; };
+		D264C95A263DE6D6007690B6 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264C959263DE6D6007690B6 /* UIButton+Extension.swift */; };
 		D2732D53263A0B2300EF32A3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D52263A0B2300EF32A3 /* UIColor+Extension.swift */; };
 		D2732D55263A0B3A00EF32A3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D54263A0B3A00EF32A3 /* UIView+Extension.swift */; };
 		D2732D57263A1CF300EF32A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2732D56263A1CF300EF32A3 /* GoogleService-Info.plist */; };
@@ -65,6 +66,7 @@
 		D213B566263693E4002FF2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D213B5732636990D002FF2D1 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		D25CCC35263748E100F885C5 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		D264C959263DE6D6007690B6 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		D2732D52263A0B2300EF32A3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D2732D54263A0B3A00EF32A3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D2732D56263A1CF300EF32A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			children = (
 				D2732D52263A0B2300EF32A3 /* UIColor+Extension.swift */,
 				D2732D54263A0B3A00EF32A3 /* UIView+Extension.swift */,
+				D264C959263DE6D6007690B6 /* UIButton+Extension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -228,7 +231,6 @@
 				C7F8CBA9B2DEF8B7B38EEB63 /* Pods-Instgram-FirebaseTests.debug.xcconfig */,
 				49907270984D725B83E5701D /* Pods-Instgram-FirebaseTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -476,6 +478,7 @@
 				D2732D55263A0B3A00EF32A3 /* UIView+Extension.swift in Sources */,
 				D213B540263693DF002FF2D1 /* AppDelegate.swift in Sources */,
 				D25CCC36263748E100F885C5 /* CustomTextField.swift in Sources */,
+				D264C95A263DE6D6007690B6 /* UIButton+Extension.swift in Sources */,
 				D213B542263693DF002FF2D1 /* SceneDelegate.swift in Sources */,
 				D213B5742636990D002FF2D1 /* SignUpVC.swift in Sources */,
 				D213B54A263693DF002FF2D1 /* Instgram_Firebase.xcdatamodeld in Sources */,
