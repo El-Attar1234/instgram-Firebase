@@ -18,11 +18,13 @@
 		D213B55A263693E3002FF2D1 /* Instgram_FirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B559263693E3002FF2D1 /* Instgram_FirebaseTests.swift */; };
 		D213B565263693E4002FF2D1 /* Instgram_FirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B564263693E4002FF2D1 /* Instgram_FirebaseUITests.swift */; };
 		D213B5742636990D002FF2D1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B5732636990D002FF2D1 /* SignUpVC.swift */; };
+		D2297691263ECEDD008BE208 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2297690263ECEDD008BE208 /* MainTabBarController.swift */; };
 		D25CCC36263748E100F885C5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25CCC35263748E100F885C5 /* CustomTextField.swift */; };
 		D264C95A263DE6D6007690B6 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264C959263DE6D6007690B6 /* UIButton+Extension.swift */; };
 		D2732D53263A0B2300EF32A3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D52263A0B2300EF32A3 /* UIColor+Extension.swift */; };
 		D2732D55263A0B3A00EF32A3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D54263A0B3A00EF32A3 /* UIView+Extension.swift */; };
 		D2732D57263A1CF300EF32A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2732D56263A1CF300EF32A3 /* GoogleService-Info.plist */; };
+		D2D6FE21263ED3510086A7CD /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D6FE20263ED3510086A7CD /* UserProfileVC.swift */; };
 		DC74A24AEBFAA7B79C1E0C91 /* Pods_Instgram_Firebase_Instgram_FirebaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FB3FA40D376BD1B95BC18D /* Pods_Instgram_Firebase_Instgram_FirebaseUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,11 +67,13 @@
 		D213B564263693E4002FF2D1 /* Instgram_FirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instgram_FirebaseUITests.swift; sourceTree = "<group>"; };
 		D213B566263693E4002FF2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D213B5732636990D002FF2D1 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		D2297690263ECEDD008BE208 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		D25CCC35263748E100F885C5 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		D264C959263DE6D6007690B6 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		D2732D52263A0B2300EF32A3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D2732D54263A0B3A00EF32A3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D2732D56263A1CF300EF32A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2D6FE20263ED3510086A7CD /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		DB6896F9377B44A18EDB8DCA /* Pods_Instgram_FirebaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_FirebaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D10FF64DF4F460656CE766 /* Pods-Instgram-Firebase-Instgram-FirebaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-Firebase-Instgram-FirebaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-Instgram-Firebase-Instgram-FirebaseUITests/Pods-Instgram-Firebase-Instgram-FirebaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EBF233D8EB5B8DF0F85471C2 /* Pods_Instgram_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				D213B5732636990D002FF2D1 /* SignUpVC.swift */,
+				D2D6FE20263ED3510086A7CD /* UserProfileVC.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				D25CCC35263748E100F885C5 /* CustomTextField.swift */,
+				D2297690263ECEDD008BE208 /* MainTabBarController.swift */,
 			);
 			path = reusable_components;
 			sourceTree = "<group>";
@@ -475,6 +481,8 @@
 			files = (
 				D2732D53263A0B2300EF32A3 /* UIColor+Extension.swift in Sources */,
 				D213B544263693DF002FF2D1 /* ViewController.swift in Sources */,
+				D2297691263ECEDD008BE208 /* MainTabBarController.swift in Sources */,
+				D2D6FE21263ED3510086A7CD /* UserProfileVC.swift in Sources */,
 				D2732D55263A0B3A00EF32A3 /* UIView+Extension.swift in Sources */,
 				D213B540263693DF002FF2D1 /* AppDelegate.swift in Sources */,
 				D25CCC36263748E100F885C5 /* CustomTextField.swift in Sources */,
