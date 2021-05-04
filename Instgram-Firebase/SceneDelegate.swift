@@ -20,8 +20,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     guard let WindowScene = (scene as? UIWindowScene) else { return }
         window=UIWindow(frame: WindowScene.screen.bounds)
         window?.windowScene = WindowScene
-        //window?.rootViewController  = SignUpVC()
-        window?.rootViewController  = MainTabBarController()
+        let storyboard = UIStoryboard(name: "MainContent", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MainTabBarController")
+      
+        
+         window?.rootViewController  = vc
+       // window?.rootViewController  = SignUpVC()
+    //    window?.rootViewController  = MainTabBarController()
         window?.makeKeyAndVisible()
     
         

@@ -12,6 +12,12 @@ target 'Instgram-Firebase' do
    pod 'Firebase/Storage'
 
 
+   pod 'Alamofire'
+   pod 'SDWebImage'
+   pod 'NVActivityIndicatorView'
+   pod 'ReachabilitySwift'
+   pod 'SwiftMessages'
+
   target 'Instgram-FirebaseTests' do
     inherit! :search_paths
     # Pods for testing
