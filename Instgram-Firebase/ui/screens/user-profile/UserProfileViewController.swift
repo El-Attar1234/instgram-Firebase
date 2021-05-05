@@ -9,8 +9,47 @@
 import UIKit
 import Firebase
 
+@IBDesignable extension UIButton {
+    
+    @IBInspectable var borderWidth: CGFloat {
+        set {
+            layer.borderWidth = newValue
+        }
+        get {
+            return layer.borderWidth
+        }
+    }
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        set {
+            layer.cornerRadius = newValue
+        }
+        get {
+            return layer.cornerRadius
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor? {
+        set {
+            guard let uiColor = newValue else { return }
+            layer.borderColor = uiColor.cgColor
+        }
+        get {
+            guard let color = layer.borderColor else { return nil }
+            return UIColor(cgColor: color)
+        }
+    }
+}
+
+
+
+
+
 class UserProfileViewController: UIViewController {
     
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var gridButton: UIButton!
+    @IBOutlet weak var buttonsStackView: UIStackView!
     @IBOutlet weak var userProfileCollectionView: UICollectionView!
     var imageURL : String?
     override func viewDidLoad() {
@@ -23,11 +62,24 @@ class UserProfileViewController: UIViewController {
         tabBarController?.tabBar.barTintColor = .lightGray
         fetchUserData()
         
+        
     }
     
     
-    
-    
+    @IBAction func logoutAction(_ sender: Any) {
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let logoutAction = UIAlertAction(title: "Log Out", style: .destructive,handler: {(_) in
+            
+            
+            
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel,handler:nil)
+        alertController.addAction(logoutAction)
+        alertController.addAction(cancelAction)
+        self.present(alertController , animated: true ,completion: nil)
+    }
     
 }
 extension UserProfileViewController :UICollectionViewDelegate ,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
@@ -43,7 +95,6 @@ extension UserProfileViewController :UICollectionViewDelegate ,UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderCollectionReusableView", for: indexPath) as! HeaderCollectionReusableView
-        header.backgroundColor = .red
         header.setUpComponent(imageURL : imageURL)
         return header
     }
@@ -54,6 +105,11 @@ extension UserProfileViewController :UICollectionViewDelegate ,UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         return CGSize(width: view.frame.width, height: 200)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+    }
+    
     
     fileprivate func fetchUserData(){
         guard let uid = Auth.auth().currentUser?.uid else{return}
