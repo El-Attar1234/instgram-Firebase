@@ -53,6 +53,7 @@ class UserProfileViewController: UIViewController {
     @IBOutlet weak var userProfileCollectionView: UICollectionView!
     var imageURL : String?
     override func viewDidLoad() {
+        checkIfUserIsLogin()
         super.viewDidLoad()
         navigationItem.title =   Auth.auth().currentUser?.uid ?? "User Profile"
         navigationController?.tabBarItem.image = UIImage(systemName: "person")
@@ -64,13 +65,22 @@ class UserProfileViewController: UIViewController {
         
         
     }
-    
+    fileprivate func checkIfUserIsLogin(){
+        if Auth.auth().currentUser == nil {
+            DispatchQueue.main.async {
+                let loginNavController = self.storyboard?.instantiateViewController(identifier: "LogInNavController") as! UINavigationController
+                loginNavController.modalPresentationStyle = .fullScreen
+                self.present(loginNavController, animated: true, completion: nil)
+            }
+            return
+        }
+    }
     
     @IBAction func logoutAction(_ sender: Any) {
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
         let logoutAction = UIAlertAction(title: "Log Out", style: .destructive,handler: {(_) in
-            
+            try?Auth.auth().signOut()
             
             
         })

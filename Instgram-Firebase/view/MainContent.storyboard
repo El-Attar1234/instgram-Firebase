@@ -314,6 +314,66 @@
             </objects>
             <point key="canvasLocation" x="839.13043478260875" y="53.571428571428569"/>
         </scene>
+        <!--Log In-->
+        <scene sceneID="aQc-Uu-Ne4">
+            <objects>
+                <viewController storyboardIdentifier="LogInVC" id="tul-3D-LMe" customClass="LogInVC" customModule="Instgram_Firebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="npz-Ia-f3Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prb-st-mBT">
+                                <rect key="frame" x="0.0" y="812" width="248.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nOK-Bg-AiP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJq-y1-kg5">
+                                <rect key="frame" x="253.5" y="812" width="58" height="50"/>
+                                <state key="normal" title="Sign UP."/>
+                                <connections>
+                                    <action selector="singUpShowScreen:" destination="tul-3D-LMe" eventType="touchUpInside" id="HLi-xp-jl2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="prb-st-mBT" firstAttribute="leading" secondItem="qK9-Xa-lK9" secondAttribute="leading" id="Jr1-tA-eLB"/>
+                            <constraint firstItem="eJq-y1-kg5" firstAttribute="bottom" secondItem="prb-st-mBT" secondAttribute="bottom" id="VZW-u6-pf1"/>
+                            <constraint firstItem="eJq-y1-kg5" firstAttribute="leading" secondItem="prb-st-mBT" secondAttribute="trailing" constant="5" id="j5X-dh-RHf"/>
+                            <constraint firstItem="qK9-Xa-lK9" firstAttribute="bottom" secondItem="prb-st-mBT" secondAttribute="bottom" id="m5u-h8-4Bn"/>
+                            <constraint firstItem="prb-st-mBT" firstAttribute="width" secondItem="npz-Ia-f3Q" secondAttribute="width" multiplier="0.6" id="mQV-qy-1s4"/>
+                            <constraint firstItem="eJq-y1-kg5" firstAttribute="top" secondItem="prb-st-mBT" secondAttribute="top" id="xhN-qk-J0u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qK9-Xa-lK9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Log In" id="q37-qW-njS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0C-q6-Cm8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747.826086956522" y="737.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Y2-74-YxU">
+            <objects>
+                <navigationController storyboardIdentifier="LogInNavController" automaticallyAdjustsScrollViewInsets="NO" id="f1X-o2-4zV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I5X-MN-yug">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tul-3D-LMe" kind="relationship" relationship="rootViewController" id="7N6-bH-rNo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VmC-Qk-6Fv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.68115942028987" y="737.94642857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="add-profile-image" width="170.5" height="170.5"/>

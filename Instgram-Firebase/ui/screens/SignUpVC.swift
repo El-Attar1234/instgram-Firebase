@@ -48,7 +48,9 @@ class SignUpVC: UIViewController {
     }
     
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+         navigationController?.navigationBar.isHidden = true
+    }
     @objc func registerToFirebase(){
         guard let email = emailTextField.text , email.count>5  else {
             return
