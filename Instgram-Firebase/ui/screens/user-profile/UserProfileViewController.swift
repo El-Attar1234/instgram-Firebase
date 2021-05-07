@@ -61,10 +61,18 @@ class UserProfileViewController: UIViewController {
         
         tabBarController?.tabBar.tintColor = .black
         tabBarController?.tabBar.barTintColor = .lightGray
-        fetchUserData()
+     //   fetchUserData()
         
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         fetchUserData()
+      }
+    
+    
+    
+    
     fileprivate func checkIfUserIsLogin(){
         if Auth.auth().currentUser == nil {
             DispatchQueue.main.async {
@@ -81,7 +89,9 @@ class UserProfileViewController: UIViewController {
         
         let logoutAction = UIAlertAction(title: "Log Out", style: .destructive,handler: {(_) in
             try?Auth.auth().signOut()
-            
+            let loginNavController = self.storyboard?.instantiateViewController(identifier: "LogInNavController") as! UINavigationController
+            loginNavController.modalPresentationStyle = .fullScreen
+            self.present(loginNavController, animated: true, completion: nil)
             
         })
         
@@ -121,7 +131,7 @@ extension UserProfileViewController :UICollectionViewDelegate ,UICollectionViewD
     }
     
     
-    fileprivate func fetchUserData(){
+     func fetchUserData(){
         guard let uid = Auth.auth().currentUser?.uid else{return}
         Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { [weak self](snapshot) in
             guard let self = self else {return}
@@ -129,8 +139,7 @@ extension UserProfileViewController :UICollectionViewDelegate ,UICollectionViewD
             let userName = dictionary["userName"] as? String
             let imageURL = dictionary["image_Url"] as? String
             self.imageURL = imageURL ?? ""
-            print("thread ->>>>\(Thread.current)")
-            print("thread ->>>>\(Thread.isMainThread)")
+           // navigationItem.title =   userName
             self.navigationItem.title = userName
             self.userProfileCollectionView.reloadData()
         }) { (error) in

@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       
         
          window?.rootViewController  = vc
-       // window?.rootViewController  = SignUpVC()
+      //  window?.rootViewController  = SignUpVC()
     //    window?.rootViewController  = MainTabBarController()
         window?.makeKeyAndVisible()
     

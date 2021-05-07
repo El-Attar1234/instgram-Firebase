@@ -2,7 +2,7 @@
 //  SignUpVC.swift
 //  Instgram-Firebase
 //
-//  Created by Mahmoud Elattar on 4/25/21.
+//  Created by Mahmoud Elattar on 4/25/21./Users/mahmoudelattar/Desktop/iti/ios/Instgram-Firebase/Instgram-Firebase/Instgram-Firebase/Utils/extensions/UIView+Extension.swift
 //  Copyright © 2021 ITI. All rights reserved.
 //
 
@@ -30,6 +30,17 @@ class SignUpVC: UIViewController {
         return button
     }()
     
+    let loginButton :UIButton = {
+          let button = UIButton(type: .system)
+        let attributedTitle = NSMutableAttributedString(string: "Already have an account?", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17) , NSAttributedString.Key.foregroundColor : UIColor.gray])
+        let latterString = NSAttributedString(string: " Sign In.", attributes:  [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17) , NSAttributedString.Key.foregroundColor : UIColor.colorWithRGB(red: 17, green: 154, blue: 237)])
+        attributedTitle.append(latterString)
+          button.setAttributedTitle(attributedTitle, for: .normal)
+          button.addTarget(self, action: #selector(popUpLoginScreen), for: .touchUpInside)
+          return button
+      }()
+    
+    
     let emailTextField = CustomTextField(placeHolder : "E-mail")
     let userNameTextField = CustomTextField(placeHolder : "UserName")
     let passwordTextField = CustomTextField(placeHolder : "Password")
@@ -42,6 +53,7 @@ class SignUpVC: UIViewController {
         view.backgroundColor = .systemBackground
         configureProfileImageButton()
         configureStackView()
+        configureSignInButton()
         handleTextFieldInput()
         
         
@@ -111,7 +123,10 @@ class SignUpVC: UIViewController {
         
     }
     
-    
+    @objc func popUpLoginScreen(){
+          navigationController?.popToRootViewController(animated: true)
+        
+    }
     private func handleTextFieldInput(){
         emailTextField.addTarget(self, action: #selector(checkIfInputsValidation), for: .editingChanged)
         userNameTextField.addTarget(self, action: #selector(checkIfInputsValidation), for: .editingChanged)
@@ -143,6 +158,11 @@ class SignUpVC: UIViewController {
         stackView.spacing = 10
         self.passwordTextField.isSecureTextEntry = true
         stackView.anchor(top: profileImageButton.bottomAnchor, topPadding: 40, bottom: nil, bottomPadding: 0, leading: view.leadingAnchor, leadingPadding: 30, trailing: view.trailingAnchor, trailingPadding: 30, width: nil, height: view.frame.height*0.3)
+        
+    }
+    private func configureSignInButton(){
+        view.addSubview(loginButton)
+        loginButton.anchor(top: nil, topPadding: 0, bottom: view.safeAreaLayoutGuide.bottomAnchor, bottomPadding: -8, leading: view.leadingAnchor, leadingPadding: 30, trailing: nil, trailingPadding: 0, width: view.frame.width*0.7, height: 30)
         
     }
     

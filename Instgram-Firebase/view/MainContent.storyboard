@@ -338,12 +338,33 @@
                                     <action selector="singUpShowScreen:" destination="tul-3D-LMe" eventType="touchUpInside" id="HLi-xp-jl2"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewL-bu-kdy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intagram-llogo" translatesAutoresizingMaskIntoConstraints="NO" id="y1N-Ri-IUI">
+                                        <rect key="frame" x="0.0" y="15" width="414" height="120"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="y1N-Ri-IUI" firstAttribute="centerX" secondItem="ewL-bu-kdy" secondAttribute="centerX" id="7BV-2a-ZuX"/>
+                                    <constraint firstItem="y1N-Ri-IUI" firstAttribute="centerY" secondItem="ewL-bu-kdy" secondAttribute="centerY" id="NxP-bN-n4k"/>
+                                    <constraint firstItem="y1N-Ri-IUI" firstAttribute="width" secondItem="ewL-bu-kdy" secondAttribute="width" id="bBt-pZ-WQL"/>
+                                    <constraint firstItem="y1N-Ri-IUI" firstAttribute="height" secondItem="ewL-bu-kdy" secondAttribute="height" multiplier="0.8" id="psT-rC-nWd"/>
+                                    <constraint firstAttribute="height" constant="150" id="slG-CI-GeH"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ewL-bu-kdy" firstAttribute="leading" secondItem="qK9-Xa-lK9" secondAttribute="leading" id="6fi-C6-lWO"/>
+                            <constraint firstItem="ewL-bu-kdy" firstAttribute="top" secondItem="qK9-Xa-lK9" secondAttribute="top" id="9ow-bb-NNo"/>
                             <constraint firstItem="prb-st-mBT" firstAttribute="leading" secondItem="qK9-Xa-lK9" secondAttribute="leading" id="Jr1-tA-eLB"/>
                             <constraint firstItem="eJq-y1-kg5" firstAttribute="bottom" secondItem="prb-st-mBT" secondAttribute="bottom" id="VZW-u6-pf1"/>
                             <constraint firstItem="eJq-y1-kg5" firstAttribute="leading" secondItem="prb-st-mBT" secondAttribute="trailing" constant="5" id="j5X-dh-RHf"/>
+                            <constraint firstItem="qK9-Xa-lK9" firstAttribute="trailing" secondItem="ewL-bu-kdy" secondAttribute="trailing" id="lFD-dW-Kam"/>
                             <constraint firstItem="qK9-Xa-lK9" firstAttribute="bottom" secondItem="prb-st-mBT" secondAttribute="bottom" id="m5u-h8-4Bn"/>
                             <constraint firstItem="prb-st-mBT" firstAttribute="width" secondItem="npz-Ia-f3Q" secondAttribute="width" multiplier="0.6" id="mQV-qy-1s4"/>
                             <constraint firstItem="eJq-y1-kg5" firstAttribute="top" secondItem="prb-st-mBT" secondAttribute="top" id="xhN-qk-J0u"/>
@@ -351,10 +372,29 @@
                         <viewLayoutGuide key="safeArea" id="qK9-Xa-lK9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Log In" id="q37-qW-njS"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="instgramLogoView" destination="ewL-bu-kdy" id="GBb-9P-da3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0C-q6-Cm8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1747.826086956522" y="737.94642857142856"/>
+            <point key="canvasLocation" x="2423" y="751"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GMh-CY-HJS">
+            <objects>
+                <viewController id="8OA-14-6ff" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zev-B5-3eP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="upK-m7-Zx5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="El3-2L-7Mo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="699"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Y2-74-YxU">
@@ -372,7 +412,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VmC-Qk-6Fv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="837.68115942028987" y="737.94642857142856"/>
+            <point key="canvasLocation" x="1675" y="751"/>
         </scene>
     </scenes>
     <resources>
@@ -380,6 +420,7 @@
         <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
         <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="intagram-llogo" width="417" height="121"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
     </resources>
 </document>
