@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9998939ADCF3FE1C08DD5F0 /* Pods_Instgram_FirebaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6896F9377B44A18EDB8DCA /* Pods_Instgram_FirebaseTests.framework */; };
+		B4DCE2C7D91E502240DE6CD6 /* Pods_Instgram_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF233D8EB5B8DF0F85471C2 /* Pods_Instgram_Firebase.framework */; };
 		D213B540263693DF002FF2D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B53F263693DF002FF2D1 /* AppDelegate.swift */; };
 		D213B542263693DF002FF2D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B541263693DF002FF2D1 /* SceneDelegate.swift */; };
 		D213B544263693DF002FF2D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B543263693DF002FF2D1 /* ViewController.swift */; };
@@ -16,7 +18,19 @@
 		D213B55A263693E3002FF2D1 /* Instgram_FirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B559263693E3002FF2D1 /* Instgram_FirebaseTests.swift */; };
 		D213B565263693E4002FF2D1 /* Instgram_FirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B564263693E4002FF2D1 /* Instgram_FirebaseUITests.swift */; };
 		D213B5742636990D002FF2D1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213B5732636990D002FF2D1 /* SignUpVC.swift */; };
+		D2297691263ECEDD008BE208 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2297690263ECEDD008BE208 /* MainTabBarController.swift */; };
+		D25947262640E67B00A6693D /* MainContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25947252640E67B00A6693D /* MainContent.storyboard */; };
+		D25947292640F0DA00A6693D /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25947282640F0DA00A6693D /* HeaderCollectionReusableView.swift */; };
+		D259472B2640F10200A6693D /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D259472A2640F10200A6693D /* PhotoCollectionViewCell.swift */; };
+		D259472D2640F23700A6693D /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D259472C2640F23700A6693D /* UserProfileViewController.swift */; };
+		D259472F2640F9B700A6693D /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D259472E2640F9B700A6693D /* UIImageView+Extension.swift */; };
 		D25CCC36263748E100F885C5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25CCC35263748E100F885C5 /* CustomTextField.swift */; };
+		D264C95A263DE6D6007690B6 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264C959263DE6D6007690B6 /* UIButton+Extension.swift */; };
+		D269746C2642C8A000C9FA87 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269746B2642C8A000C9FA87 /* LogInVC.swift */; };
+		D2732D53263A0B2300EF32A3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D52263A0B2300EF32A3 /* UIColor+Extension.swift */; };
+		D2732D55263A0B3A00EF32A3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D54263A0B3A00EF32A3 /* UIView+Extension.swift */; };
+		D2732D57263A1CF300EF32A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2732D56263A1CF300EF32A3 /* GoogleService-Info.plist */; };
+		DC74A24AEBFAA7B79C1E0C91 /* Pods_Instgram_Firebase_Instgram_FirebaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FB3FA40D376BD1B95BC18D /* Pods_Instgram_Firebase_Instgram_FirebaseUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06232A76DAD68DC4B05BAD85 /* Pods-Instgram-Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-Firebase.debug.xcconfig"; path = "Target Support Files/Pods-Instgram-Firebase/Pods-Instgram-Firebase.debug.xcconfig"; sourceTree = "<group>"; };
+		14F63B5E8B9F8F75E7B1C2BA /* Pods-Instgram-Firebase-Instgram-FirebaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-Firebase-Instgram-FirebaseUITests.release.xcconfig"; path = "Target Support Files/Pods-Instgram-Firebase-Instgram-FirebaseUITests/Pods-Instgram-Firebase-Instgram-FirebaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		49907270984D725B83E5701D /* Pods-Instgram-FirebaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-FirebaseTests.release.xcconfig"; path = "Target Support Files/Pods-Instgram-FirebaseTests/Pods-Instgram-FirebaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2FB3FA40D376BD1B95BC18D /* Pods_Instgram_Firebase_Instgram_FirebaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_Firebase_Instgram_FirebaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48948B2E2CA71F4B25A5911 /* Pods-Instgram-Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-Firebase.release.xcconfig"; path = "Target Support Files/Pods-Instgram-Firebase/Pods-Instgram-Firebase.release.xcconfig"; sourceTree = "<group>"; };
+		C7F8CBA9B2DEF8B7B38EEB63 /* Pods-Instgram-FirebaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-FirebaseTests.debug.xcconfig"; path = "Target Support Files/Pods-Instgram-FirebaseTests/Pods-Instgram-FirebaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D213B53C263693DF002FF2D1 /* Instgram-Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instgram-Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D213B53F263693DF002FF2D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D213B541263693DF002FF2D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +72,21 @@
 		D213B564263693E4002FF2D1 /* Instgram_FirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instgram_FirebaseUITests.swift; sourceTree = "<group>"; };
 		D213B566263693E4002FF2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D213B5732636990D002FF2D1 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		D2297690263ECEDD008BE208 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		D25947252640E67B00A6693D /* MainContent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainContent.storyboard; sourceTree = "<group>"; };
+		D25947282640F0DA00A6693D /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		D259472A2640F10200A6693D /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D259472C2640F23700A6693D /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		D259472E2640F9B700A6693D /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		D25CCC35263748E100F885C5 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		D264C959263DE6D6007690B6 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		D269746B2642C8A000C9FA87 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		D2732D52263A0B2300EF32A3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D2732D54263A0B3A00EF32A3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D2732D56263A1CF300EF32A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB6896F9377B44A18EDB8DCA /* Pods_Instgram_FirebaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_FirebaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D10FF64DF4F460656CE766 /* Pods-Instgram-Firebase-Instgram-FirebaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-Firebase-Instgram-FirebaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-Instgram-Firebase-Instgram-FirebaseUITests/Pods-Instgram-Firebase-Instgram-FirebaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBF233D8EB5B8DF0F85471C2 /* Pods_Instgram_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DCE2C7D91E502240DE6CD6 /* Pods_Instgram_Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9998939ADCF3FE1C08DD5F0 /* Pods_Instgram_FirebaseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC74A24AEBFAA7B79C1E0C91 /* Pods_Instgram_Firebase_Instgram_FirebaseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +132,8 @@
 				D213B558263693E3002FF2D1 /* Instgram-FirebaseTests */,
 				D213B563263693E4002FF2D1 /* Instgram-FirebaseUITests */,
 				D213B53D263693DF002FF2D1 /* Products */,
+				DD80043E6BD3797D4F23F69C /* Pods */,
+				DB70593153F24AA01F89F829 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +150,8 @@
 		D213B53E263693DF002FF2D1 /* Instgram-Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				D25947242640E66200A6693D /* view */,
+				D2732D50263A0AF800EF32A3 /* Utils */,
 				D202F7F126377C85009C1F3F /* resources */,
 				D25CCC332637480200F885C5 /* ui */,
 				D213B53F263693DF002FF2D1 /* AppDelegate.swift */,
@@ -119,6 +160,7 @@
 				D213B54D263693E3002FF2D1 /* LaunchScreen.storyboard */,
 				D213B550263693E3002FF2D1 /* Info.plist */,
 				D213B548263693DF002FF2D1 /* Instgram_Firebase.xcdatamodeld */,
+				D2732D56263A1CF300EF32A3 /* GoogleService-Info.plist */,
 			);
 			path = "Instgram-Firebase";
 			sourceTree = "<group>";
@@ -144,9 +186,29 @@
 		D213B572263698E1002FF2D1 /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				D269746A2642C87900C9FA87 /* login */,
+				D25947272640EF7D00A6693D /* user-profile */,
 				D213B5732636990D002FF2D1 /* SignUpVC.swift */,
 			);
 			path = screens;
+			sourceTree = "<group>";
+		};
+		D25947242640E66200A6693D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D25947252640E67B00A6693D /* MainContent.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D25947272640EF7D00A6693D /* user-profile */ = {
+			isa = PBXGroup;
+			children = (
+				D259472C2640F23700A6693D /* UserProfileViewController.swift */,
+				D259472A2640F10200A6693D /* PhotoCollectionViewCell.swift */,
+				D25947282640F0DA00A6693D /* HeaderCollectionReusableView.swift */,
+			);
+			path = "user-profile";
 			sourceTree = "<group>";
 		};
 		D25CCC332637480200F885C5 /* ui */ = {
@@ -162,8 +224,59 @@
 			isa = PBXGroup;
 			children = (
 				D25CCC35263748E100F885C5 /* CustomTextField.swift */,
+				D2297690263ECEDD008BE208 /* MainTabBarController.swift */,
 			);
 			path = reusable_components;
+			sourceTree = "<group>";
+		};
+		D269746A2642C87900C9FA87 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				D269746B2642C8A000C9FA87 /* LogInVC.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		D2732D50263A0AF800EF32A3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D2732D51263A0B0200EF32A3 /* extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D2732D51263A0B0200EF32A3 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D2732D52263A0B2300EF32A3 /* UIColor+Extension.swift */,
+				D2732D54263A0B3A00EF32A3 /* UIView+Extension.swift */,
+				D264C959263DE6D6007690B6 /* UIButton+Extension.swift */,
+				D259472E2640F9B700A6693D /* UIImageView+Extension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		DB70593153F24AA01F89F829 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBF233D8EB5B8DF0F85471C2 /* Pods_Instgram_Firebase.framework */,
+				A2FB3FA40D376BD1B95BC18D /* Pods_Instgram_Firebase_Instgram_FirebaseUITests.framework */,
+				DB6896F9377B44A18EDB8DCA /* Pods_Instgram_FirebaseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD80043E6BD3797D4F23F69C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06232A76DAD68DC4B05BAD85 /* Pods-Instgram-Firebase.debug.xcconfig */,
+				C48948B2E2CA71F4B25A5911 /* Pods-Instgram-Firebase.release.xcconfig */,
+				E7D10FF64DF4F460656CE766 /* Pods-Instgram-Firebase-Instgram-FirebaseUITests.debug.xcconfig */,
+				14F63B5E8B9F8F75E7B1C2BA /* Pods-Instgram-Firebase-Instgram-FirebaseUITests.release.xcconfig */,
+				C7F8CBA9B2DEF8B7B38EEB63 /* Pods-Instgram-FirebaseTests.debug.xcconfig */,
+				49907270984D725B83E5701D /* Pods-Instgram-FirebaseTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D213B569263693E4002FF2D1 /* Build configuration list for PBXNativeTarget "Instgram-Firebase" */;
 			buildPhases = (
+				C1C0588CDF603A7E3489220B /* [CP] Check Pods Manifest.lock */,
 				D213B538263693DF002FF2D1 /* Sources */,
 				D213B539263693DF002FF2D1 /* Frameworks */,
 				D213B53A263693DF002FF2D1 /* Resources */,
+				1E654F9EACA83872C635E0DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +305,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D213B56C263693E4002FF2D1 /* Build configuration list for PBXNativeTarget "Instgram-FirebaseTests" */;
 			buildPhases = (
+				0DBB5EF0FF31B50DECD088CA /* [CP] Check Pods Manifest.lock */,
 				D213B551263693E3002FF2D1 /* Sources */,
 				D213B552263693E3002FF2D1 /* Frameworks */,
 				D213B553263693E3002FF2D1 /* Resources */,
@@ -208,9 +324,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D213B56F263693E4002FF2D1 /* Build configuration list for PBXNativeTarget "Instgram-FirebaseUITests" */;
 			buildPhases = (
+				28EB549502ADFD24F79DF695 /* [CP] Check Pods Manifest.lock */,
 				D213B55C263693E4002FF2D1 /* Sources */,
 				D213B55D263693E4002FF2D1 /* Frameworks */,
 				D213B55E263693E4002FF2D1 /* Resources */,
+				34646CF2A37D462431B20F52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,7 +389,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D213B54F263693E3002FF2D1 /* LaunchScreen.storyboard in Resources */,
+				D25947262640E67B00A6693D /* MainContent.storyboard in Resources */,
 				D213B54C263693E3002FF2D1 /* Assets.xcassets in Resources */,
+				D2732D57263A1CF300EF32A3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,14 +411,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DBB5EF0FF31B50DECD088CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instgram-FirebaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E654F9EACA83872C635E0DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instgram-Firebase/Pods-Instgram-Firebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instgram-Firebase/Pods-Instgram-Firebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instgram-Firebase/Pods-Instgram-Firebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28EB549502ADFD24F79DF695 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instgram-Firebase-Instgram-FirebaseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34646CF2A37D462431B20F52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instgram-Firebase-Instgram-FirebaseUITests/Pods-Instgram-Firebase-Instgram-FirebaseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instgram-Firebase-Instgram-FirebaseUITests/Pods-Instgram-Firebase-Instgram-FirebaseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instgram-Firebase-Instgram-FirebaseUITests/Pods-Instgram-Firebase-Instgram-FirebaseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1C0588CDF603A7E3489220B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instgram-Firebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D213B538263693DF002FF2D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2732D53263A0B2300EF32A3 /* UIColor+Extension.swift in Sources */,
+				D259472B2640F10200A6693D /* PhotoCollectionViewCell.swift in Sources */,
+				D259472F2640F9B700A6693D /* UIImageView+Extension.swift in Sources */,
 				D213B544263693DF002FF2D1 /* ViewController.swift in Sources */,
+				D2297691263ECEDD008BE208 /* MainTabBarController.swift in Sources */,
+				D25947292640F0DA00A6693D /* HeaderCollectionReusableView.swift in Sources */,
+				D2732D55263A0B3A00EF32A3 /* UIView+Extension.swift in Sources */,
 				D213B540263693DF002FF2D1 /* AppDelegate.swift in Sources */,
+				D269746C2642C8A000C9FA87 /* LogInVC.swift in Sources */,
 				D25CCC36263748E100F885C5 /* CustomTextField.swift in Sources */,
+				D259472D2640F23700A6693D /* UserProfileViewController.swift in Sources */,
+				D264C95A263DE6D6007690B6 /* UIButton+Extension.swift in Sources */,
 				D213B542263693DF002FF2D1 /* SceneDelegate.swift in Sources */,
 				D213B5742636990D002FF2D1 /* SignUpVC.swift in Sources */,
 				D213B54A263693DF002FF2D1 /* Instgram_Firebase.xcdatamodeld in Sources */,
@@ -464,6 +696,7 @@
 		};
 		D213B56A263693E4002FF2D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06232A76DAD68DC4B05BAD85 /* Pods-Instgram-Firebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -482,6 +715,7 @@
 		};
 		D213B56B263693E4002FF2D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C48948B2E2CA71F4B25A5911 /* Pods-Instgram-Firebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +734,7 @@
 		};
 		D213B56D263693E4002FF2D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7F8CBA9B2DEF8B7B38EEB63 /* Pods-Instgram-FirebaseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +757,7 @@
 		};
 		D213B56E263693E4002FF2D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49907270984D725B83E5701D /* Pods-Instgram-FirebaseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -544,6 +780,7 @@
 		};
 		D213B570263693E4002FF2D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D10FF64DF4F460656CE766 /* Pods-Instgram-Firebase-Instgram-FirebaseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -564,6 +801,7 @@
 		};
 		D213B571263693E4002FF2D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14F63B5E8B9F8F75E7B1C2BA /* Pods-Instgram-Firebase-Instgram-FirebaseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
