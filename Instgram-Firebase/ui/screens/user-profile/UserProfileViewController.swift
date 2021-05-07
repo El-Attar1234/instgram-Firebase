@@ -56,11 +56,7 @@ class UserProfileViewController: UIViewController {
         checkIfUserIsLogin()
         super.viewDidLoad()
         navigationItem.title =   Auth.auth().currentUser?.uid ?? "User Profile"
-        navigationController?.tabBarItem.image = UIImage(systemName: "person")
-        navigationController?.tabBarItem.selectedImage = UIImage(systemName: "person.fill")
-        
-        tabBarController?.tabBar.tintColor = .black
-        tabBarController?.tabBar.barTintColor = .lightGray
+      //  tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: 0, right: -4)
      //   fetchUserData()
         
         

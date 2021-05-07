@@ -275,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKV-WQ-kmS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749.2753623188407" y="53.571428571428569"/>
+            <point key="canvasLocation" x="1613" y="-717"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0m9-gL-qu9">
@@ -286,20 +286,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="lLA-56-gwG" kind="relationship" relationship="viewControllers" id="HCe-Mb-kHX"/>
+                        <segue destination="8OA-14-6ff" kind="relationship" relationship="viewControllers" id="5pg-yR-MRm"/>
+                        <segue destination="87O-w9-Hn1" kind="relationship" relationship="viewControllers" id="myW-gR-T4x"/>
+                        <segue destination="JCK-m2-yyk" kind="relationship" relationship="viewControllers" id="Nvw-IB-MEp"/>
+                        <segue destination="1fD-K4-X1i" kind="relationship" relationship="viewControllers" id="UyN-di-97Q"/>
+                        <segue destination="lLA-56-gwG" kind="relationship" relationship="viewControllers" id="hfx-ou-loU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ix-Hy-tdz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71.014492753623188" y="53.571428571428569"/>
+            <point key="canvasLocation" x="-645" y="-305"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jeR-oe-6FF">
+            <objects>
+                <viewController id="JCK-m2-yyk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o7T-WT-JOx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="j2Y-zH-zEg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="plus.app" catalog="system" id="zbg-wY-Bom"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qtY-Ve-KFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="505"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q95-8l-p3b">
+            <objects>
+                <viewController id="1fD-K4-X1i" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aVl-be-kzI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gB9-UR-sf3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" selectedImage="heart.fill" id="mOJ-yJ-Eac"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="09y-r0-6aE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819" y="173"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QYF-se-hbc">
+            <objects>
+                <viewController id="87O-w9-Hn1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Rv-cq-PFm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XQp-Fp-8N7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="nir-r5-A7U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JdP-1b-rf5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1612" y="-481"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gaz-iv-hf7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lLA-56-gwG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="ZWu-g0-831"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person.fill" id="ZWu-g0-831">
+                        <inset key="imageInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h2q-qw-dHF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -312,7 +369,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WpO-YE-4rI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="839.13043478260875" y="53.571428571428569"/>
+            <point key="canvasLocation" x="819" y="-717"/>
         </scene>
         <!--Log In-->
         <scene sceneID="aQc-Uu-Ne4">
@@ -391,10 +448,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="upK-m7-Zx5"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" selectedImage="house.fill" id="DOH-8X-WRO">
+                        <inset key="imageInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="El3-2L-7Mo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="699"/>
+            <point key="canvasLocation" x="-2161" y="289"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Y2-74-YxU">
@@ -420,7 +480,15 @@
         <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
         <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="intagram-llogo" width="417" height="121"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
     </resources>
 </document>
