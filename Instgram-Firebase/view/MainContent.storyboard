@@ -293,30 +293,86 @@
                     <connections>
                         <segue destination="8OA-14-6ff" kind="relationship" relationship="viewControllers" id="5pg-yR-MRm"/>
                         <segue destination="87O-w9-Hn1" kind="relationship" relationship="viewControllers" id="myW-gR-T4x"/>
-                        <segue destination="JCK-m2-yyk" kind="relationship" relationship="viewControllers" id="Nvw-IB-MEp"/>
-                        <segue destination="1fD-K4-X1i" kind="relationship" relationship="viewControllers" id="UyN-di-97Q"/>
-                        <segue destination="lLA-56-gwG" kind="relationship" relationship="viewControllers" id="hfx-ou-loU"/>
+                        <segue destination="JCK-m2-yyk" kind="relationship" relationship="viewControllers" id="znQ-ud-Rap"/>
+                        <segue destination="1fD-K4-X1i" kind="relationship" relationship="viewControllers" id="iei-tl-FcT"/>
+                        <segue destination="lLA-56-gwG" kind="relationship" relationship="viewControllers" id="hg6-yW-OK6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ix-Hy-tdz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-645" y="-305"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="jeR-oe-6FF">
             <objects>
-                <viewController id="JCK-m2-yyk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoSelectorVC" id="JCK-m2-yyk" customClass="PhotoSelectorVC" customModule="Instgram_Firebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o7T-WT-JOx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zXu-W1-32O">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qNz-9O-IDv">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoSelectorCollectionViewCell" id="0MR-0R-AwO" customClass="PhotoSelectorCollectionViewCell" customModule="Instgram_Firebase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Psp-uj-vSG">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.44098522210000002" blue="0.029293841130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="PhotoSelectorHeader" id="U1R-Lq-uRo" customClass="PhotoSelectorHeader" customModule="Instgram_Firebase" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wt-9B-aDm">
+                                            <rect key="frame" x="8" y="8" width="398" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="9Wt-9B-aDm" firstAttribute="leading" secondItem="U1R-Lq-uRo" secondAttribute="leadingMargin" id="ASz-K7-gq1"/>
+                                        <constraint firstItem="9Wt-9B-aDm" firstAttribute="top" secondItem="U1R-Lq-uRo" secondAttribute="topMargin" id="FJe-Z4-9aR"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="9Wt-9B-aDm" secondAttribute="bottom" id="IfX-rc-sns"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="9Wt-9B-aDm" secondAttribute="trailing" id="bRV-7e-UEq"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="testLabel" destination="9Wt-9B-aDm" id="xN6-ll-lUA"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="JCK-m2-yyk" id="If4-zM-Zpz"/>
+                                    <outlet property="delegate" destination="JCK-m2-yyk" id="LhI-b3-6VW"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="j2Y-zH-zEg" firstAttribute="bottom" secondItem="zXu-W1-32O" secondAttribute="bottom" id="Awg-kU-TMU"/>
+                            <constraint firstItem="zXu-W1-32O" firstAttribute="leading" secondItem="j2Y-zH-zEg" secondAttribute="leading" id="bP3-L9-u8B"/>
+                            <constraint firstItem="zXu-W1-32O" firstAttribute="top" secondItem="j2Y-zH-zEg" secondAttribute="top" id="cZW-8h-fnM"/>
+                            <constraint firstItem="j2Y-zH-zEg" firstAttribute="trailing" secondItem="zXu-W1-32O" secondAttribute="trailing" id="yPE-Th-FQy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="j2Y-zH-zEg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="plus.app" catalog="system" id="zbg-wY-Bom"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="plus.app" catalog="system" id="jcw-n4-oFY"/>
+                    <navigationItem key="navigationItem" id="fLp-0u-aD0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtY-Ve-KFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1" y="505"/>
+            <point key="canvasLocation" x="-835" y="446"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Q95-8l-p3b">
@@ -332,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="09y-r0-6aE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="819" y="173"/>
+            <point key="canvasLocation" x="570" y="289"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QYF-se-hbc">
@@ -436,12 +492,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0C-q6-Cm8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2423" y="751"/>
+            <point key="canvasLocation" x="3331.884057971015" y="750.66964285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="GMh-CY-HJS">
             <objects>
-                <viewController id="8OA-14-6ff" sceneMemberID="viewController">
+                <viewController id="8OA-14-6ff" customClass="HomeVC" customModule="Instgram_Firebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zev-B5-3eP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -472,7 +528,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VmC-Qk-6Fv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="751"/>
+            <point key="canvasLocation" x="2584.057971014493" y="750.66964285714278"/>
         </scene>
     </scenes>
     <resources>
