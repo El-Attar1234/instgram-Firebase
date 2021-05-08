@@ -1,5 +1,6 @@
 # Mac OS X Finder
 .DS_Store
+README.md
 
 # Private Keys
 *.pem

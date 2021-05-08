@@ -314,42 +314,54 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qNz-9O-IDv">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="itemSize" width="182" height="172"/>
+                                    <size key="headerReferenceSize" width="50" height="186"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoSelectorCollectionViewCell" id="0MR-0R-AwO" customClass="PhotoSelectorCollectionViewCell" customModule="Instgram_Firebase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="186" width="182" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Psp-uj-vSG">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="172"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mea-E5-6bM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="172"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Mea-E5-6bM" secondAttribute="trailing" id="4F3-8N-xdZ"/>
+                                                <constraint firstItem="Mea-E5-6bM" firstAttribute="top" secondItem="Psp-uj-vSG" secondAttribute="top" id="WOu-h6-qCG"/>
+                                                <constraint firstAttribute="bottom" secondItem="Mea-E5-6bM" secondAttribute="bottom" id="f95-bY-5RF"/>
+                                                <constraint firstItem="Mea-E5-6bM" firstAttribute="leading" secondItem="Psp-uj-vSG" secondAttribute="leading" id="wVf-n6-gkG"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.44098522210000002" blue="0.029293841130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="customSize" width="182" height="172"/>
+                                        <connections>
+                                            <outlet property="assetImage" destination="Mea-E5-6bM" id="nD3-sE-8mI"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="PhotoSelectorHeader" id="U1R-Lq-uRo" customClass="PhotoSelectorHeader" customModule="Instgram_Firebase" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="186"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wt-9B-aDm">
-                                            <rect key="frame" x="8" y="8" width="398" height="34"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qxl-O0-07G">
+                                            <rect key="frame" x="8" y="8" width="398" height="170"/>
+                                        </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="9Wt-9B-aDm" firstAttribute="leading" secondItem="U1R-Lq-uRo" secondAttribute="leadingMargin" id="ASz-K7-gq1"/>
-                                        <constraint firstItem="9Wt-9B-aDm" firstAttribute="top" secondItem="U1R-Lq-uRo" secondAttribute="topMargin" id="FJe-Z4-9aR"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="9Wt-9B-aDm" secondAttribute="bottom" id="IfX-rc-sns"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="9Wt-9B-aDm" secondAttribute="trailing" id="bRV-7e-UEq"/>
+                                        <constraint firstItem="Qxl-O0-07G" firstAttribute="trailing" secondItem="U1R-Lq-uRo" secondAttribute="trailingMargin" id="CbD-V8-xvt"/>
+                                        <constraint firstItem="Qxl-O0-07G" firstAttribute="bottom" secondItem="U1R-Lq-uRo" secondAttribute="bottomMargin" id="Fsa-3k-phs"/>
+                                        <constraint firstItem="Qxl-O0-07G" firstAttribute="top" secondItem="U1R-Lq-uRo" secondAttribute="topMargin" id="dyC-LB-tgH"/>
+                                        <constraint firstItem="Qxl-O0-07G" firstAttribute="leading" secondItem="U1R-Lq-uRo" secondAttribute="leadingMargin" id="gyz-71-hrc"/>
                                     </constraints>
                                     <connections>
-                                        <outlet property="testLabel" destination="9Wt-9B-aDm" id="xN6-ll-lUA"/>
+                                        <outlet property="selectedHeaderImage" destination="Qxl-O0-07G" id="K7i-Az-j1H"/>
                                     </connections>
                                 </collectionReusableView>
                                 <connections>
@@ -369,10 +381,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="plus.app" catalog="system" id="jcw-n4-oFY"/>
                     <navigationItem key="navigationItem" id="fLp-0u-aD0"/>
+                    <connections>
+                        <outlet property="imagesCollectionView" destination="zXu-W1-32O" id="s68-UX-RAZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtY-Ve-KFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-835" y="446"/>
+            <point key="canvasLocation" x="-836.23188405797111" y="445.98214285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Q95-8l-p3b">
