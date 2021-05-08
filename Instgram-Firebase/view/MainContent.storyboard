@@ -293,7 +293,7 @@
                     <connections>
                         <segue destination="8OA-14-6ff" kind="relationship" relationship="viewControllers" id="5pg-yR-MRm"/>
                         <segue destination="87O-w9-Hn1" kind="relationship" relationship="viewControllers" id="myW-gR-T4x"/>
-                        <segue destination="JCK-m2-yyk" kind="relationship" relationship="viewControllers" id="Nvw-IB-MEp"/>
+                        <segue destination="lYM-KP-6Dl" kind="relationship" relationship="viewControllers" id="Nvw-IB-MEp"/>
                         <segue destination="1fD-K4-X1i" kind="relationship" relationship="viewControllers" id="UyN-di-97Q"/>
                         <segue destination="lLA-56-gwG" kind="relationship" relationship="viewControllers" id="hfx-ou-loU"/>
                     </connections>
@@ -302,21 +302,36 @@
             </objects>
             <point key="canvasLocation" x="-645" y="-305"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo SelectorVC-->
         <scene sceneID="jeR-oe-6FF">
             <objects>
-                <viewController id="JCK-m2-yyk" sceneMemberID="viewController">
+                <viewController id="JCK-m2-yyk" customClass="PhotoSelectorVC" customModule="Instgram_Firebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o7T-WT-JOx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="j2Y-zH-zEg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="plus.app" catalog="system" id="zbg-wY-Bom"/>
+                    <navigationItem key="navigationItem" id="Nf7-Vf-MJK">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="fig-qU-vv1">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uVk-1B-6T0">
+                                <rect key="frame" x="20" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="gat-Ov-Tov">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CRs-I1-ZT1">
+                                <rect key="frame" x="20" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtY-Ve-KFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1" y="505"/>
+            <point key="canvasLocation" x="910.14492753623199" y="504.91071428571428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Q95-8l-p3b">
@@ -332,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="09y-r0-6aE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="819" y="173"/>
+            <point key="canvasLocation" x="1728.985507246377" y="172.76785714285714"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QYF-se-hbc">
@@ -436,12 +451,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0C-q6-Cm8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2423" y="751"/>
+            <point key="canvasLocation" x="3331.884057971015" y="750.66964285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="GMh-CY-HJS">
             <objects>
-                <viewController id="8OA-14-6ff" sceneMemberID="viewController">
+                <viewController id="8OA-14-6ff" customClass="HomeVC" customModule="Instgram_Firebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zev-B5-3eP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -472,7 +487,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VmC-Qk-6Fv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="751"/>
+            <point key="canvasLocation" x="2584.057971014493" y="750.66964285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W3v-93-rsb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lYM-KP-6Dl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="plus.app" catalog="system" id="zbg-wY-Bom"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fhD-nJ-90o">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JCK-m2-yyk" kind="relationship" relationship="rootViewController" id="vAn-FV-Xt9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4k1-j9-cyi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="504.91071428571428"/>
         </scene>
     </scenes>
     <resources>
