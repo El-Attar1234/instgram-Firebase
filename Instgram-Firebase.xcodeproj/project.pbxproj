@@ -26,6 +26,9 @@
 		D259472F2640F9B700A6693D /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D259472E2640F9B700A6693D /* UIImageView+Extension.swift */; };
 		D2596DDE264672F300ADCA33 /* PhotoSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2596DDD264672F300ADCA33 /* PhotoSelectorVC.swift */; };
 		D2596DE1264674C900ADCA33 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2596DE0264674C900ADCA33 /* HomeVC.swift */; };
+		D2596DE4264682D400ADCA33 /* FakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2596DE3264682D400ADCA33 /* FakeVC.swift */; };
+		D2596DE8264685A000ADCA33 /* PhotoSelectorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2596DE72646859F00ADCA33 /* PhotoSelectorCollectionViewCell.swift */; };
+		D2596DEA26468A1700ADCA33 /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2596DE926468A1700ADCA33 /* PhotoSelectorHeader.swift */; };
 		D25CCC36263748E100F885C5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25CCC35263748E100F885C5 /* CustomTextField.swift */; };
 		D264C95A263DE6D6007690B6 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264C959263DE6D6007690B6 /* UIButton+Extension.swift */; };
 		D269746C2642C8A000C9FA87 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269746B2642C8A000C9FA87 /* LogInVC.swift */; };
@@ -82,6 +85,9 @@
 		D259472E2640F9B700A6693D /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		D2596DDD264672F300ADCA33 /* PhotoSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorVC.swift; sourceTree = "<group>"; };
 		D2596DE0264674C900ADCA33 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		D2596DE3264682D400ADCA33 /* FakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeVC.swift; sourceTree = "<group>"; };
+		D2596DE72646859F00ADCA33 /* PhotoSelectorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2596DE926468A1700ADCA33 /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorHeader.swift; sourceTree = "<group>"; };
 		D25CCC35263748E100F885C5 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		D264C959263DE6D6007690B6 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		D269746B2642C8A000C9FA87 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
@@ -190,6 +196,7 @@
 		D213B572263698E1002FF2D1 /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				D2596DE22646829700ADCA33 /* FakeViewController */,
 				D2596DDF264674A900ADCA33 /* home */,
 				D2596DDC264672BA00ADCA33 /* photo_selector */,
 				D269746A2642C87900C9FA87 /* login */,
@@ -221,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				D2596DDD264672F300ADCA33 /* PhotoSelectorVC.swift */,
+				D2596DE72646859F00ADCA33 /* PhotoSelectorCollectionViewCell.swift */,
+				D2596DE926468A1700ADCA33 /* PhotoSelectorHeader.swift */,
 			);
 			path = photo_selector;
 			sourceTree = "<group>";
@@ -231,6 +240,14 @@
 				D2596DE0264674C900ADCA33 /* HomeVC.swift */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		D2596DE22646829700ADCA33 /* FakeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D2596DE3264682D400ADCA33 /* FakeVC.swift */,
+			);
+			path = FakeViewController;
 			sourceTree = "<group>";
 		};
 		D25CCC332637480200F885C5 /* ui */ = {
@@ -543,17 +560,20 @@
 			files = (
 				D2732D53263A0B2300EF32A3 /* UIColor+Extension.swift in Sources */,
 				D259472B2640F10200A6693D /* PhotoCollectionViewCell.swift in Sources */,
+				D2596DE8264685A000ADCA33 /* PhotoSelectorCollectionViewCell.swift in Sources */,
 				D259472F2640F9B700A6693D /* UIImageView+Extension.swift in Sources */,
 				D213B544263693DF002FF2D1 /* ViewController.swift in Sources */,
 				D2596DDE264672F300ADCA33 /* PhotoSelectorVC.swift in Sources */,
 				D2596DE1264674C900ADCA33 /* HomeVC.swift in Sources */,
 				D2297691263ECEDD008BE208 /* MainTabBarController.swift in Sources */,
+				D2596DEA26468A1700ADCA33 /* PhotoSelectorHeader.swift in Sources */,
 				D25947292640F0DA00A6693D /* HeaderCollectionReusableView.swift in Sources */,
 				D2732D55263A0B3A00EF32A3 /* UIView+Extension.swift in Sources */,
 				D213B540263693DF002FF2D1 /* AppDelegate.swift in Sources */,
 				D269746C2642C8A000C9FA87 /* LogInVC.swift in Sources */,
 				D25CCC36263748E100F885C5 /* CustomTextField.swift in Sources */,
 				D259472D2640F23700A6693D /* UserProfileViewController.swift in Sources */,
+				D2596DE4264682D400ADCA33 /* FakeVC.swift in Sources */,
 				D264C95A263DE6D6007690B6 /* UIButton+Extension.swift in Sources */,
 				D213B542263693DF002FF2D1 /* SceneDelegate.swift in Sources */,
 				D213B5742636990D002FF2D1 /* SignUpVC.swift in Sources */,

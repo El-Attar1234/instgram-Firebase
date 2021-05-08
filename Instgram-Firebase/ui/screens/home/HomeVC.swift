@@ -20,13 +20,17 @@ class HomeVC: UIViewController {
 
 extension HomeVC : UITabBarControllerDelegate{
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        print("\(viewController)")
         if viewController is PhotoSelectorVC{
-            let vc = PhotoSelectorVC()
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
-             return false
+            let vc = self.storyboard?.instantiateViewController(identifier: "PhotoSelectorVC") as! PhotoSelectorVC
+            
+            let navController = UINavigationController(rootViewController: vc)
+            navController.modalPresentationStyle = .fullScreen
+            present(navController, animated: true)
+            return false
         }
-       
+        
         return true
     }
+
 }
