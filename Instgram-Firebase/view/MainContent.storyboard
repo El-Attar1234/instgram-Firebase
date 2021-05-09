@@ -389,6 +389,59 @@
             </objects>
             <point key="canvasLocation" x="-836.23188405797111" y="445.98214285714283"/>
         </scene>
+        <!--Shared PhotoVC-->
+        <scene sceneID="uUg-cq-9WK">
+            <objects>
+                <viewController storyboardIdentifier="SharedPhotoVC" id="OqL-0D-cSk" customClass="SharedPhotoVC" customModule="Instgram_Firebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r8O-cc-kWU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lW-jU-G0Z">
+                                <rect key="frame" x="0.0" y="44" width="414" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xQw-pr-iY6">
+                                        <rect key="frame" x="0.0" y="8" width="124" height="104"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cnD-XR-9hP">
+                                        <rect key="frame" x="126" y="8" width="280" height="104"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xQw-pr-iY6" secondAttribute="bottom" constant="8" id="1hw-Vz-Pxm"/>
+                                    <constraint firstItem="xQw-pr-iY6" firstAttribute="top" secondItem="5lW-jU-G0Z" secondAttribute="top" constant="8" id="Oya-yU-Fce"/>
+                                    <constraint firstItem="xQw-pr-iY6" firstAttribute="leading" secondItem="5lW-jU-G0Z" secondAttribute="leading" id="QvE-vc-cT8"/>
+                                    <constraint firstItem="xQw-pr-iY6" firstAttribute="width" secondItem="5lW-jU-G0Z" secondAttribute="width" multiplier="0.3" id="WfT-Sf-Tn4"/>
+                                    <constraint firstItem="cnD-XR-9hP" firstAttribute="top" secondItem="xQw-pr-iY6" secondAttribute="top" id="hQy-Ym-wUn"/>
+                                    <constraint firstAttribute="trailing" secondItem="cnD-XR-9hP" secondAttribute="trailing" constant="8" id="krA-p7-I6H"/>
+                                    <constraint firstItem="cnD-XR-9hP" firstAttribute="leading" secondItem="xQw-pr-iY6" secondAttribute="trailing" constant="2" id="s0w-oi-3Rc"/>
+                                    <constraint firstItem="cnD-XR-9hP" firstAttribute="bottom" secondItem="xQw-pr-iY6" secondAttribute="bottom" id="svB-Rn-owA"/>
+                                    <constraint firstAttribute="height" constant="120" id="tYK-Ga-bc8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jKg-IX-0Py" firstAttribute="trailing" secondItem="5lW-jU-G0Z" secondAttribute="trailing" id="Dmg-li-JkV"/>
+                            <constraint firstItem="5lW-jU-G0Z" firstAttribute="leading" secondItem="jKg-IX-0Py" secondAttribute="leading" id="gDZ-WJ-gPe"/>
+                            <constraint firstItem="5lW-jU-G0Z" firstAttribute="top" secondItem="jKg-IX-0Py" secondAttribute="top" id="h9c-Fi-uuP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jKg-IX-0Py"/>
+                    </view>
+                    <connections>
+                        <outlet property="captionTextView" destination="cnD-XR-9hP" id="V7J-7e-jbz"/>
+                        <outlet property="selectedPhoto" destination="xQw-pr-iY6" id="ohf-9P-GKF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlt-9M-dE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-75.362318840579718" y="1040.625"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Q95-8l-p3b">
             <objects>
@@ -507,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0C-q6-Cm8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3331.884057971015" y="750.66964285714278"/>
+            <point key="canvasLocation" x="2822" y="212"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="GMh-CY-HJS">
@@ -543,7 +596,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VmC-Qk-6Fv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2584.057971014493" y="750.66964285714278"/>
+            <point key="canvasLocation" x="2010" y="191"/>
         </scene>
     </scenes>
     <resources>

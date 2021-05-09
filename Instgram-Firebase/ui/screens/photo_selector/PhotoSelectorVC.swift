@@ -14,7 +14,7 @@ class PhotoSelectorVC: UIViewController {
     var myAssetImages = [UIImage]()
     var myAssets      = [PHAsset]()
     var selectedindex : Int?
-    
+    var header        : PhotoSelectorHeader?
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .green
@@ -23,7 +23,7 @@ class PhotoSelectorVC: UIViewController {
     }
     fileprivate func fetchPhotos(){
         let fetchOptions = PHFetchOptions()
-        fetchOptions.fetchLimit = 10
+        fetchOptions.fetchLimit = 80
         let sortDisriptor = NSSortDescriptor(key: "creationDate", ascending: false)
         fetchOptions.sortDescriptors = [sortDisriptor]
         let allPhotos = PHAsset.fetchAssets(with: .image, options: fetchOptions)
@@ -61,7 +61,11 @@ class PhotoSelectorVC: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(handleCancelAction))
     }
     @objc func handleNextAction(){
-        
+        let sharedPhotoVC = self.storyboard?.instantiateViewController(identifier: "SharedPhotoVC") as! SharedPhotoVC
+       let index = selectedindex ?? 0
+        let image = myAssetImages[index]
+        sharedPhotoVC.passedImage = self.header?.selectedHeaderImage.image
+        navigationController?.pushViewController(sharedPhotoVC, animated: true)
     }
     
     @objc func handleCancelAction(){
@@ -100,7 +104,7 @@ extension PhotoSelectorVC :UICollectionViewDelegate ,UICollectionViewDataSource 
                                 
                                }
             
-            
+            self.header = header
             return header
         }
         
@@ -126,6 +130,8 @@ extension PhotoSelectorVC :UICollectionViewDelegate ,UICollectionViewDataSource 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedindex = indexPath.item
         self.imagesCollectionView.reloadData()
+        let indexPath = IndexPath(item: 0, section: 0)
+        self.imagesCollectionView.scrollToItem(at: indexPath, at: .bottom, animated: true)
     }
   }
 
