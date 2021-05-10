@@ -36,6 +36,8 @@
 		D2732D53263A0B2300EF32A3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D52263A0B2300EF32A3 /* UIColor+Extension.swift */; };
 		D2732D55263A0B3A00EF32A3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D54263A0B3A00EF32A3 /* UIView+Extension.swift */; };
 		D2732D57263A1CF300EF32A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2732D56263A1CF300EF32A3 /* GoogleService-Info.plist */; };
+		D2C8CD8226494C120089B854 /* UserProfileVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8CD8126494C120089B854 /* UserProfileVC+Extension.swift */; };
+		D2C8CD86264950240089B854 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8CD85264950240089B854 /* Post.swift */; };
 		DC74A24AEBFAA7B79C1E0C91 /* Pods_Instgram_Firebase_Instgram_FirebaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FB3FA40D376BD1B95BC18D /* Pods_Instgram_Firebase_Instgram_FirebaseUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,8 @@
 		D2732D52263A0B2300EF32A3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D2732D54263A0B3A00EF32A3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D2732D56263A1CF300EF32A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2C8CD8126494C120089B854 /* UserProfileVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserProfileVC+Extension.swift"; sourceTree = "<group>"; };
+		D2C8CD85264950240089B854 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		DB6896F9377B44A18EDB8DCA /* Pods_Instgram_FirebaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_FirebaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D10FF64DF4F460656CE766 /* Pods-Instgram-Firebase-Instgram-FirebaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-Firebase-Instgram-FirebaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-Instgram-Firebase-Instgram-FirebaseUITests/Pods-Instgram-Firebase-Instgram-FirebaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EBF233D8EB5B8DF0F85471C2 /* Pods_Instgram_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +166,7 @@
 		D213B53E263693DF002FF2D1 /* Instgram-Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				D2C8CD83264950100089B854 /* data */,
 				D25947242640E66200A6693D /* view */,
 				D2732D50263A0AF800EF32A3 /* Utils */,
 				D202F7F126377C85009C1F3F /* resources */,
@@ -223,6 +228,7 @@
 				D259472C2640F23700A6693D /* UserProfileViewController.swift */,
 				D259472A2640F10200A6693D /* PhotoCollectionViewCell.swift */,
 				D25947282640F0DA00A6693D /* HeaderCollectionReusableView.swift */,
+				D2C8CD8126494C120089B854 /* UserProfileVC+Extension.swift */,
 			);
 			path = "user-profile";
 			sourceTree = "<group>";
@@ -304,6 +310,22 @@
 				D259472E2640F9B700A6693D /* UIImageView+Extension.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		D2C8CD83264950100089B854 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				D2C8CD84264950160089B854 /* model */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		D2C8CD84264950160089B854 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D2C8CD85264950240089B854 /* Post.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		DB70593153F24AA01F89F829 /* Frameworks */ = {
@@ -578,8 +600,10 @@
 				D2596DE1264674C900ADCA33 /* HomeVC.swift in Sources */,
 				D2297691263ECEDD008BE208 /* MainTabBarController.swift in Sources */,
 				D2596DEA26468A1700ADCA33 /* PhotoSelectorHeader.swift in Sources */,
+				D2C8CD8226494C120089B854 /* UserProfileVC+Extension.swift in Sources */,
 				D25947292640F0DA00A6693D /* HeaderCollectionReusableView.swift in Sources */,
 				D2732D55263A0B3A00EF32A3 /* UIView+Extension.swift in Sources */,
+				D2C8CD86264950240089B854 /* Post.swift in Sources */,
 				D213B540263693DF002FF2D1 /* AppDelegate.swift in Sources */,
 				D269746C2642C8A000C9FA87 /* LogInVC.swift in Sources */,
 				D25CCC36263748E100F885C5 /* CustomTextField.swift in Sources */,
