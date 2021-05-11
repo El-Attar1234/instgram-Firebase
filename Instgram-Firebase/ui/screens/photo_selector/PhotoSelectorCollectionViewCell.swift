@@ -9,5 +9,6 @@
 import UIKit
 
 class PhotoSelectorCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var assetImage: UIImageView!
     
 }

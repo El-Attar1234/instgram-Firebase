@@ -31,14 +31,14 @@ class SignUpVC: UIViewController {
     }()
     
     let loginButton :UIButton = {
-          let button = UIButton(type: .system)
+        let button = UIButton(type: .system)
         let attributedTitle = NSMutableAttributedString(string: "Already have an account?", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17) , NSAttributedString.Key.foregroundColor : UIColor.gray])
         let latterString = NSAttributedString(string: " Sign In.", attributes:  [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17) , NSAttributedString.Key.foregroundColor : UIColor.colorWithRGB(red: 17, green: 154, blue: 237)])
         attributedTitle.append(latterString)
-          button.setAttributedTitle(attributedTitle, for: .normal)
-          button.addTarget(self, action: #selector(popUpLoginScreen), for: .touchUpInside)
-          return button
-      }()
+        button.setAttributedTitle(attributedTitle, for: .normal)
+        button.addTarget(self, action: #selector(popUpLoginScreen), for: .touchUpInside)
+        return button
+    }()
     
     
     let emailTextField = CustomTextField(placeHolder : "E-mail")
@@ -61,7 +61,7 @@ class SignUpVC: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-         navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
     }
     @objc func registerToFirebase(){
         guard let email = emailTextField.text , email.count>5  else {
@@ -101,15 +101,15 @@ class SignUpVC: UIViewController {
                         return
                     }
                     guard let url = url else {return}
-               //     imageUrl = url.absoluteString
+                    //     imageUrl = url.absoluteString
                     
                     let values = ["userName":name,"image_Url":url.absoluteString]
-                              Database.database().reference().child("users").child(uid).setValue(values, withCompletionBlock:  { (error, reference) in
-                                  if let error = error  {
-                                      print("error" , error)
-                                      return}
-                                  print(reference)
-                              })
+                    Database.database().reference().child("users").child(uid).setValue(values, withCompletionBlock:  { (error, reference) in
+                        if let error = error  {
+                            print("error" , error)
+                            return}
+                        print(reference)
+                    })
                 })
             }
                 
@@ -117,14 +117,14 @@ class SignUpVC: UIViewController {
                 
             )
             
-          
+            
             
         }
         
     }
     
     @objc func popUpLoginScreen(){
-          navigationController?.popToRootViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
         
     }
     private func handleTextFieldInput(){

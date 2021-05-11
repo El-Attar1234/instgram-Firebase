@@ -10,4 +10,15 @@ import UIKit
 
 class PhotoCollectionViewCell: UICollectionViewCell {
     
-}
+    @IBOutlet weak var postImage: UIImageView!
+    
+    var post : Post?{
+        
+        didSet{
+            guard let imageUrl = post?.imageUrl else {return}
+            postImage.downloadImageUsingSession(url: imageUrl)
+        }
+           
+        }
+    }
+

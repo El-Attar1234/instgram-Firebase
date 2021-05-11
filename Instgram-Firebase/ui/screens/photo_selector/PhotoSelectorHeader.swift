@@ -9,6 +9,7 @@
 import UIKit
 
 class PhotoSelectorHeader: UICollectionReusableView {
-    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var selectedHeaderImage: UIImageView!
+   
     
 }
