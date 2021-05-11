@@ -12,7 +12,7 @@ README.md
 *.perspective
 *.perspectivev3
 *.pbxuser
-
+*.xcuserdata
 # Xcode
 xcuserdata/
 project.xcworkspace/
