@@ -57,14 +57,15 @@ class UserProfileViewController: UIViewController {
         checkIfUserIsLogin()
         super.viewDidLoad()
         navigationItem.title =   Auth.auth().currentUser?.uid ?? "User Profile"
-        fetchUserData()
+       fetchUserData()
+       fetchOrderedUserPosts()
         //  tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: 0, right: -4)
         //   fetchUserData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-       // fetchUserData()
-      //  fetchUserPosts()
+     //fetchUserData()
+     // fetchUserPosts()
     }
     fileprivate func checkIfUserIsLogin(){
         if Auth.auth().currentUser == nil {
@@ -121,6 +122,29 @@ class UserProfileViewController: UIViewController {
         
         
     }
+    fileprivate func fetchOrderedUserPosts(){
+        DispatchQueue.global(qos: .background).async {
+                   guard let uid = Auth.auth().currentUser?.uid else {return}
+                   let userPostRef =  Database.database().reference().child("posts").child(uid)
+            userPostRef.queryOrdered(byChild: "creationDate").observe(.childAdded, with: { [weak self](snapShot) in
+                       guard let self = self else {return}
+                       guard let dictionary = snapShot.value as? [String : Any] else {return}
+                    
+                           let post = Post(dictionary: dictionary)
+                           self.posts.append(post)
+                           DispatchQueue.main.async {
+                               
+                               self.userProfileCollectionView.reloadData()
+                           }
+                       
+                       
+                   }) { (error) in
+                       print("failed due to", error)
+                   }
+               }
+    }
+    
+    
     fileprivate func fetchUserPosts(){
         DispatchQueue.global(qos: .background).async {
             guard let uid = Auth.auth().currentUser?.uid else {return}

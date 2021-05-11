@@ -10,12 +10,13 @@ import UIKit
 
 extension UserProfileViewController :UICollectionViewDelegate ,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
 func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 9
+    return posts.count
 }
 
 func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCollectionViewCell", for: indexPath) as! PhotoCollectionViewCell
-    //cell.postImage.downloadImage(url: posts[indexPath.item].imageUrl)
+    cell.post = posts[indexPath.item]
+  //  cell.postImage.downloadImage(url: posts[indexPath.item].imageUrl)
     return cell
 }
 
@@ -33,9 +34,7 @@ func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElem
 func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
     return CGSize(width: collectionView.frame.width, height: 200)
 }
-func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-    return CGSize(width: view.frame.width, height: 200)
-}
+
 
 func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
     return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)

@@ -18,22 +18,37 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KBh-Ah-KXT">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" red="1" green="0.44098522210000002" blue="0.029293841130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="igj-YH-98C">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="284" height="264"/>
                                     <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="eOe-hh-YNt" customClass="PhotoCollectionViewCell" customModule="Instgram_Firebase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="128" height="128"/>
+                                        <rect key="frame" x="65" y="50" width="284" height="264"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Lez-ZH-ncg">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="284" height="264"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S07-Yb-jVW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="284" height="264"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="S07-Yb-jVW" secondAttribute="trailing" id="4x4-dK-rdn"/>
+                                                <constraint firstItem="S07-Yb-jVW" firstAttribute="leading" secondItem="Lez-ZH-ncg" secondAttribute="leading" id="ZKt-7W-vVW"/>
+                                                <constraint firstAttribute="bottom" secondItem="S07-Yb-jVW" secondAttribute="bottom" id="dIl-q8-qvr"/>
+                                                <constraint firstItem="S07-Yb-jVW" firstAttribute="top" secondItem="Lez-ZH-ncg" secondAttribute="top" id="qQy-TT-ImP"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="284" height="264"/>
+                                        <connections>
+                                            <outlet property="postImage" destination="S07-Yb-jVW" id="Pow-lA-LuU"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeaderCollectionReusableView" id="hNl-85-5rC" customClass="HeaderCollectionReusableView" customModule="Instgram_Firebase" customModuleProvider="target">
@@ -264,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKV-WQ-kmS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1613" y="-717"/>
+            <point key="canvasLocation" x="1611.5942028985507" y="-717.1875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0m9-gL-qu9">
