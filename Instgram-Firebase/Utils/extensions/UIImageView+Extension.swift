@@ -10,6 +10,7 @@ import UIKit
 import  SDWebImage
 
  fileprivate var lastUrlUsed : String?
+fileprivate var cachedImages = [String : UIImage]()
 extension UIImageView{
     func makeRounded() {
         self.layer.borderWidth = 1
@@ -27,7 +28,12 @@ extension UIImageView{
     func downloadImageUsingSession(url:String){
         lastUrlUsed = url
            guard let url = URL(string: url) else {return}
-               URLSession.shared.dataTask(with: url) { (data, response, error) in
+        if let cachedImage = cachedImages[url.absoluteString] {
+            self.image = cachedImage
+            return
+        }
+               URLSession.shared.dataTask(with: url) {[weak self] (data, response, error) in
+                guard let self = self else {return}
                    if let error = error {
                        print("failed due to ",error)
                    }
@@ -38,6 +44,7 @@ extension UIImageView{
                    
                    guard let imageData = data else {return}
                    let photo = UIImage(data: imageData)
+                 cachedImages[url.absoluteString] = photo
                    DispatchQueue.main.async {
                        self.image = photo
                    }
