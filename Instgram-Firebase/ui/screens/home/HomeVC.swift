@@ -16,7 +16,8 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         self.tabBarController?.delegate = self
         setUpNavigationTitle()
-        self.fetchUserPosts()
+        self.fetchUserData()
+       
     }
     
     fileprivate func setUpNavigationTitle(){
@@ -26,7 +27,26 @@ class HomeVC: UIViewController {
         imageView.image = image
         navigationItem.titleView = imageView
     }
-    
+    var user : User?
+      func fetchUserData(){
+          guard let uid = Auth.auth().currentUser?.uid else{return}
+          
+          
+         // DispatchQueue.global(qos: .background).async {
+              Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { [weak self](snapshot) in
+                  guard let self = self else {return}
+                  guard let dictionary = snapshot.value as? [String : Any] else {return}
+                let user = User(dictionary: dictionary)
+                  self.user = user
+                  self.fetchUserPosts()
+                  
+              }) { (error) in
+                  print("failed to fetch user data")
+              }
+          //}
+          
+          
+      }
     fileprivate func fetchUserPosts(){
         DispatchQueue.global(qos: .background).async {
             guard let uid = Auth.auth().currentUser?.uid else {return}
@@ -36,8 +56,11 @@ class HomeVC: UIViewController {
                 guard let dictionaries = snapShot.value as? [String : Any] else {return}
                 dictionaries.forEach { (key: String, value: Any) in
                     guard let dictionary = value as? [String : Any] else {return}
-                    let post = Post(dictionary: dictionary)
-                    self.posts.append(post)
+                    guard let user = self.user else {return}
+                    
+                    let post = Post(user : user, dictionary: dictionary)
+                      self.posts.insert(post, at: 0)
+                //    self.posts.append(post)
                     DispatchQueue.main.async {
                         
                         self.postsCollectionView.reloadData()
