@@ -32,6 +32,8 @@
 		D25B3A0326518B9200440335 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B3A0226518B9200440335 /* User.swift */; };
 		D25CCC36263748E100F885C5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25CCC35263748E100F885C5 /* CustomTextField.swift */; };
 		D264C95A263DE6D6007690B6 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264C959263DE6D6007690B6 /* UIButton+Extension.swift */; };
+		D265F752268124C400BF86FB /* Firebase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265F751268124C400BF86FB /* Firebase+Extension.swift */; };
+		D265F7552681FED100BF86FB /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265F7542681FED100BF86FB /* SearchVC.swift */; };
 		D266F7AF264C56AF00282B27 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D266F7AE264C56AF00282B27 /* HomeCollectionViewCell.swift */; };
 		D266F7B1264C56C800282B27 /* HomeVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D266F7B0264C56C800282B27 /* HomeVC+Extension.swift */; };
 		D267E260264824F000578F3E /* SharedPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267E25F264824F000578F3E /* SharedPhotoVC.swift */; };
@@ -97,6 +99,8 @@
 		D25B3A0226518B9200440335 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D25CCC35263748E100F885C5 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		D264C959263DE6D6007690B6 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		D265F751268124C400BF86FB /* Firebase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Extension.swift"; sourceTree = "<group>"; };
+		D265F7542681FED100BF86FB /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		D266F7AE264C56AF00282B27 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D266F7B0264C56C800282B27 /* HomeVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+Extension.swift"; sourceTree = "<group>"; };
 		D267E25F264824F000578F3E /* SharedPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPhotoVC.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 		D213B572263698E1002FF2D1 /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				D265F7532681FDF300BF86FB /* search */,
 				D267E25E264824A200578F3E /* shared-photo */,
 				D2596DE22646829700ADCA33 /* FakeViewController */,
 				D2596DDF264674A900ADCA33 /* home */,
@@ -285,6 +290,14 @@
 			path = reusable_components;
 			sourceTree = "<group>";
 		};
+		D265F7532681FDF300BF86FB /* search */ = {
+			isa = PBXGroup;
+			children = (
+				D265F7542681FED100BF86FB /* SearchVC.swift */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
 		D267E25E264824A200578F3E /* shared-photo */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +329,7 @@
 				D2732D54263A0B3A00EF32A3 /* UIView+Extension.swift */,
 				D264C959263DE6D6007690B6 /* UIButton+Extension.swift */,
 				D259472E2640F9B700A6693D /* UIImageView+Extension.swift */,
+				D265F751268124C400BF86FB /* Firebase+Extension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -620,7 +634,9 @@
 				D25CCC36263748E100F885C5 /* CustomTextField.swift in Sources */,
 				D259472D2640F23700A6693D /* UserProfileViewController.swift in Sources */,
 				D2596DE4264682D400ADCA33 /* FakeVC.swift in Sources */,
+				D265F7552681FED100BF86FB /* SearchVC.swift in Sources */,
 				D264C95A263DE6D6007690B6 /* UIButton+Extension.swift in Sources */,
+				D265F752268124C400BF86FB /* Firebase+Extension.swift in Sources */,
 				D213B542263693DF002FF2D1 /* SceneDelegate.swift in Sources */,
 				D267E260264824F000578F3E /* SharedPhotoVC.swift in Sources */,
 				D213B5742636990D002FF2D1 /* SignUpVC.swift in Sources */,

@@ -151,63 +151,255 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1DB6076D-6AF2-429E-9CCB-404AEE51A71D"
+            uuid = "B883D371-03A8-46CB-AA7A-7ADFFB9E24F4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Instgram-Firebase/ui/screens/user-profile/UserProfileVC+Extension.swift"
+            filePath = "Instgram-Firebase/ui/screens/home/HomeVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchUserData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "20982A99-5C88-416E-AEFF-D90996A0D01A"
+            uuid = "E6E22132-8D87-4A25-99BB-32608E2D82E7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Instgram-Firebase/Utils/extensions/UIImageView+Extension.swift"
+            filePath = "Instgram-Firebase/Utils/extensions/Firebase+Extension.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "downloadImageUsingSession(url:)"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "getUserWithID(uid:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "75E1F1DC-FC74-437C-8BFE-98E7653AAE2E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Instgram-Firebase/data/model/Post.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "init(user:dictionary:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "427D4016-E10C-4EF5-9E52-D465EF0183DA"
+            uuid = "07D9297A-7FE7-4B95-BF69-8DA6EFCCB1E7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "fetchUserData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "408B68DC-296D-47B6-9AF9-E27FCD23B663"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "fetchOrderedUserPosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D09883AD-4A89-4B95-9FD7-BCCBF03A1AFF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "fetchOrderedUserPosts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D09883AD-4A89-4B95-9FD7-BCCBF03A1AFF - 3c16e458c94991ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Instgram_Firebase.UserProfileViewController.fetchOrderedUserPosts() -&gt; ()"
+                  moduleName = "Instgram-Firebase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoudelattar/Desktop/iti/ios/Instgram-Firebase/instgram-Firebase/Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "771">
+               </Location>
+               <Location
+                  uuid = "D09883AD-4A89-4B95-9FD7-BCCBF03A1AFF - c315decd508c8433"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in closure #1 () -&gt; () in Instgram_Firebase.UserProfileViewController.fetchOrderedUserPosts() -&gt; ()"
+                  moduleName = "Instgram-Firebase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoudelattar/Desktop/iti/ios/Instgram-Firebase/instgram-Firebase/Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "221">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9D2CACF-AECF-449D-8F91-CA2016173C78"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "fetchOrderedUserPosts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A9D2CACF-AECF-449D-8F91-CA2016173C78 - 211bc2a5099b368f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Instgram_Firebase.UserProfileViewController.fetchOrderedUserPosts() -&gt; ()"
+                  moduleName = "Instgram-Firebase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoudelattar/Desktop/iti/ios/Instgram-Firebase/instgram-Firebase/Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "197">
+               </Location>
+               <Location
+                  uuid = "A9D2CACF-AECF-449D-8F91-CA2016173C78 - 3c16e458c94991de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Instgram_Firebase.UserProfileViewController.fetchOrderedUserPosts() -&gt; ()"
+                  moduleName = "Instgram-Firebase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoudelattar/Desktop/iti/ios/Instgram-Firebase/instgram-Firebase/Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1703289-7F5E-4B3D-A3C5-91B5FB68DBEA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "fetchOrderedUserPosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF04BFAB-41B0-4DEF-B333-F6F672400565"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+            landmarkName = "fetchOrderedUserPosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89942B50-6CE8-4B9A-89CD-F6AAC52745C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "fetchOrderedUserPosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32CA523E-B892-4C94-ACDE-20212ADFF944"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "fetchUserData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "173A2867-89F2-4255-9C61-E9F6B55D0CE8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "fetchUserData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "312EE210-2E5B-4D60-A077-C2980FBD8272"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Instgram-Firebase/ui/screens/user-profile/UserProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "fetchUserData()"
             landmarkType = "7">
          </BreakpointContent>

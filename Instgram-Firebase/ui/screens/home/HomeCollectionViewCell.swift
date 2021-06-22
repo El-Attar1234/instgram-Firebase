@@ -19,8 +19,20 @@ class HomeCollectionViewCell: UICollectionViewCell {
             userProfileImage.downloadImage(url:profileImage)
             userNameLabel.text = post?.user.userName
             captionTextView.text = post?.caption
+            setAttributedString()
         }
     }
+    
+    fileprivate func setAttributedString(){
+        guard let post = self.post else { return }
+        let attributedTitle = NSMutableAttributedString(string: "\(post.user.userName)", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17)])
+        let captionString = NSAttributedString(string: "\(post.caption)", attributes:  [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17) ])
+        attributedTitle.append(captionString)
+        attributedTitle.append( NSAttributedString(string: "\n\n", attributes:  [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 4) ]))
+        attributedTitle.append( NSAttributedString(string: "1 week ago", attributes:  [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17),NSAttributedString.Key.foregroundColor : UIColor.gray]))
+        captionTextView.attributedText = attributedTitle
+    }
+    
     
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!

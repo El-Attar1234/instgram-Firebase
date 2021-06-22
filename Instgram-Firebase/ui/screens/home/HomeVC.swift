@@ -30,19 +30,25 @@ class HomeVC: UIViewController {
     var user : User?
       func fetchUserData(){
           guard let uid = Auth.auth().currentUser?.uid else{return}
-          
+       Database.getUserWithID(uid: uid) {[weak self] dictionary in
+            guard let self = self else {return}
+            guard let dictionary = dictionary else {return}
+          let user = User(uid:uid,dictionary: dictionary)
+            self.user = user
+            self.fetchUserPosts()
+        }
           
          // DispatchQueue.global(qos: .background).async {
-              Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { [weak self](snapshot) in
+         /*     Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { [weak self](snapshot) in
                   guard let self = self else {return}
                   guard let dictionary = snapshot.value as? [String : Any] else {return}
-                let user = User(dictionary: dictionary)
+                let user = User(uid:uid,dictionary: dictionary)
                   self.user = user
                   self.fetchUserPosts()
                   
               }) { (error) in
                   print("failed to fetch user data")
-              }
+              }*/
           //}
           
           

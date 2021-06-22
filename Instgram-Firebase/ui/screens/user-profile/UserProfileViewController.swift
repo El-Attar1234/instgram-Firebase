@@ -58,7 +58,7 @@ class UserProfileViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title =   Auth.auth().currentUser?.uid ?? "User Profile"
         fetchUserData()
-        fetchOrderedUserPosts()
+       // fetchOrderedUserPosts()
         //  tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: 0, right: -4)
         //   fetchUserData()
     }
@@ -99,33 +99,53 @@ class UserProfileViewController: UIViewController {
     
     var user : User?
     func fetchUserData(){
+        
         guard let uid = Auth.auth().currentUser?.uid else{return}
+     Database.getUserWithID(uid: uid) {[weak self] dictionary in
+          guard let self = self else {return}
+          guard let dictionary = dictionary else {return}
+        let user = User(uid:uid,dictionary: dictionary)
+          self.user = user
+        self.imageURL = user.profileImage
+        // navigationItem.title =   userName
+        //  DispatchQueue.main.async {
+        self.navigationItem.title = user.userName
+        self.fetchOrderedUserPosts()
+        self.userProfileCollectionView.reloadData()
+      }
         
         
-        // DispatchQueue.global(qos: .background).async {
-        Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { [weak self](snapshot) in
-            guard let self = self else {return}
-            guard let dictionary = snapshot.value as? [String : Any] else {return}
-            let user = User(dictionary: dictionary)
-            self.user = user
-            self.imageURL = user.profileImage
-            // navigationItem.title =   userName
-            //  DispatchQueue.main.async {
-            self.navigationItem.title = user.userName
-            self.userProfileCollectionView.reloadData()
-            //}
-            
-        }) { (error) in
-            print("failed to fetch user data")
-        }
-        //}
+        
+        
+        
+//        guard let uid = Auth.auth().currentUser?.uid else{return}
+//        
+//        
+//        // DispatchQueue.global(qos: .background).async {
+//        Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { [weak self](snapshot) in
+//            guard let self = self else {return}
+//            guard let dictionary = snapshot.value as? [String : Any] else {return}
+//            let user = User(uid:uid,dictionary: dictionary)
+//            self.user = user
+//            self.imageURL = user.profileImage
+//            // navigationItem.title =   userName
+//            //  DispatchQueue.main.async {
+//            self.navigationItem.title = user.userName
+//            self.fetchOrderedUserPosts()
+//            self.userProfileCollectionView.reloadData()
+//            //}
+//            
+//        }) { (error) in
+//            print("failed to fetch user data")
+//        }
+//        //}
         
         
     }
     fileprivate func fetchOrderedUserPosts(){
         DispatchQueue.global(qos: .background).async {
-            guard let uid = Auth.auth().currentUser?.uid else {return}
-            let userPostRef =  Database.database().reference().child("posts").child(uid)
+          //  guard let uid = Auth.auth().currentUser?.uid else {return}
+            let userPostRef =  Database.database().reference().child("posts").child(self.user?.uid ?? "")
             userPostRef.queryOrdered(byChild: "creationDate").observe(.childAdded, with: { [weak self](snapShot) in
                 guard let self = self else {return}
                 guard let dictionary = snapShot.value as? [String : Any] else {return}
