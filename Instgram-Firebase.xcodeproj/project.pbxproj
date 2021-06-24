@@ -34,6 +34,8 @@
 		D264C95A263DE6D6007690B6 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264C959263DE6D6007690B6 /* UIButton+Extension.swift */; };
 		D265F752268124C400BF86FB /* Firebase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265F751268124C400BF86FB /* Firebase+Extension.swift */; };
 		D265F7552681FED100BF86FB /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265F7542681FED100BF86FB /* SearchVC.swift */; };
+		D265F75926822A8300BF86FB /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265F75726822A8300BF86FB /* UserTableViewCell.swift */; };
+		D265F75A26822A8300BF86FB /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D265F75826822A8300BF86FB /* UserTableViewCell.xib */; };
 		D266F7AF264C56AF00282B27 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D266F7AE264C56AF00282B27 /* HomeCollectionViewCell.swift */; };
 		D266F7B1264C56C800282B27 /* HomeVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D266F7B0264C56C800282B27 /* HomeVC+Extension.swift */; };
 		D267E260264824F000578F3E /* SharedPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267E25F264824F000578F3E /* SharedPhotoVC.swift */; };
@@ -101,6 +103,8 @@
 		D264C959263DE6D6007690B6 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		D265F751268124C400BF86FB /* Firebase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Extension.swift"; sourceTree = "<group>"; };
 		D265F7542681FED100BF86FB /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		D265F75726822A8300BF86FB /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		D265F75826822A8300BF86FB /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		D266F7AE264C56AF00282B27 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D266F7B0264C56C800282B27 /* HomeVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+Extension.swift"; sourceTree = "<group>"; };
 		D267E25F264824F000578F3E /* SharedPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPhotoVC.swift; sourceTree = "<group>"; };
@@ -293,9 +297,19 @@
 		D265F7532681FDF300BF86FB /* search */ = {
 			isa = PBXGroup;
 			children = (
+				D265F75626822A3D00BF86FB /* cell */,
 				D265F7542681FED100BF86FB /* SearchVC.swift */,
 			);
 			path = search;
+			sourceTree = "<group>";
+		};
+		D265F75626822A3D00BF86FB /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				D265F75726822A8300BF86FB /* UserTableViewCell.swift */,
+				D265F75826822A8300BF86FB /* UserTableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		D267E25E264824A200578F3E /* shared-photo */ = {
@@ -487,6 +501,7 @@
 				D25947262640E67B00A6693D /* MainContent.storyboard in Resources */,
 				D213B54C263693E3002FF2D1 /* Assets.xcassets in Resources */,
 				D2732D57263A1CF300EF32A3 /* GoogleService-Info.plist in Resources */,
+				D265F75A26822A8300BF86FB /* UserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +649,7 @@
 				D25CCC36263748E100F885C5 /* CustomTextField.swift in Sources */,
 				D259472D2640F23700A6693D /* UserProfileViewController.swift in Sources */,
 				D2596DE4264682D400ADCA33 /* FakeVC.swift in Sources */,
+				D265F75926822A8300BF86FB /* UserTableViewCell.swift in Sources */,
 				D265F7552681FED100BF86FB /* SearchVC.swift in Sources */,
 				D264C95A263DE6D6007690B6 /* UIButton+Extension.swift in Sources */,
 				D265F752268124C400BF86FB /* Firebase+Extension.swift in Sources */,

@@ -472,13 +472,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mHP-Gw-qjQ">
-                                <rect key="frame" x="0.0" y="99" width="414" height="714"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mHP-Gw-qjQ">
+                                <rect key="frame" x="0.0" y="104" width="414" height="709"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFf-TK-NcD">
                                 <rect key="frame" x="0.0" y="44" width="414" height="55"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="1ct-aH-DGB"/>
                                 </constraints>
@@ -487,10 +487,10 @@
                         <viewLayoutGuide key="safeArea" id="XQp-Fp-8N7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mHP-Gw-qjQ" firstAttribute="top" secondItem="eFf-TK-NcD" secondAttribute="bottom" id="9dw-2n-grS"/>
                             <constraint firstItem="mHP-Gw-qjQ" firstAttribute="leading" secondItem="XQp-Fp-8N7" secondAttribute="leading" id="Efb-2g-Lw6"/>
                             <constraint firstItem="mHP-Gw-qjQ" firstAttribute="bottom" secondItem="XQp-Fp-8N7" secondAttribute="bottom" id="IRt-yc-xMr"/>
                             <constraint firstItem="mHP-Gw-qjQ" firstAttribute="trailing" secondItem="XQp-Fp-8N7" secondAttribute="trailing" id="PRS-cM-4zl"/>
+                            <constraint firstItem="mHP-Gw-qjQ" firstAttribute="top" secondItem="eFf-TK-NcD" secondAttribute="bottom" constant="5" id="ZVG-Ng-NTe"/>
                             <constraint firstItem="XQp-Fp-8N7" firstAttribute="trailing" secondItem="eFf-TK-NcD" secondAttribute="trailing" id="ZkL-sz-OyL"/>
                             <constraint firstItem="eFf-TK-NcD" firstAttribute="leading" secondItem="XQp-Fp-8N7" secondAttribute="leading" id="jww-P2-Ckp"/>
                             <constraint firstItem="eFf-TK-NcD" firstAttribute="top" secondItem="XQp-Fp-8N7" secondAttribute="top" id="umx-MF-3qX"/>
@@ -498,7 +498,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="nir-r5-A7U"/>
                     <connections>
-                        <outlet property="searchBarContainer" destination="mHP-Gw-qjQ" id="g2C-24-gcw"/>
+                        <outlet property="searchBarContainer" destination="eFf-TK-NcD" id="213-E4-04n"/>
                         <outlet property="usersTableView" destination="mHP-Gw-qjQ" id="JYG-Ch-EjC"/>
                     </connections>
                 </viewController>
@@ -823,6 +823,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
