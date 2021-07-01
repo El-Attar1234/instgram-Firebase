@@ -23,8 +23,9 @@ final class SearchVC: UIViewController {
     var filteredUsers = [User]()
     override func viewDidLoad() {
         super.viewDidLoad()
-      registerCell()
-       setUpSearchBar()
+        usersTableView.keyboardDismissMode = .onDrag
+        registerCell()
+        setUpSearchBar()
         fetchAllUsers()
         
     }
@@ -51,6 +52,10 @@ final class SearchVC: UIViewController {
             guard let self = self else {return}
             guard let dictionaries = snapShot.value as? [String : Any] else {return}
             for (key,value) in dictionaries{
+                if key == Auth.auth().currentUser?.uid {
+                    print("found my self")
+                    continue
+                }
                 guard let userDictionary = value as? [String:Any] else {return}
                 let user = User(uid: key, dictionary: userDictionary)
                 self.users.append(user)
@@ -163,6 +168,17 @@ extension SearchVC : UITableViewDelegate, UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        searchController.searchBar.resignFirstResponder()
+        let profileVC = storyboard?.instantiateViewController(identifier: "UserProfileViewController") as! UserProfileViewController
+        let user = filteredUsers[indexPath.row]
+        profileVC.userNameTitle = user.userName
+        profileVC.userId = user.uid
+        profileVC.target = .Search
+        let navController = UINavigationController(rootViewController: profileVC)
+        navController.modalPresentationStyle = .fullScreen
+        present(navController, animated: true)
     }
    
 }

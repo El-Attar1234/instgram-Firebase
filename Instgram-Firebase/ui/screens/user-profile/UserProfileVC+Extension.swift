@@ -26,8 +26,8 @@ func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElem
     print("\(kind)")
     let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderCollectionReusableView", for: indexPath) as! HeaderCollectionReusableView
    
-    header.setUpComponent(imageURL : imageURL)
-  
+    header.user = self.user
+    header.target = target
     return header
 }
 

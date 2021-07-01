@@ -41,22 +41,29 @@ import Firebase
     }
 }
 
-
+enum Target {
+    case Search
+    case OwnProfile
+}
 
 
 
 class UserProfileViewController: UIViewController {
     
-    @IBOutlet weak var userName: UILabel!
+
     @IBOutlet weak var gridButton: UIButton!
     @IBOutlet weak var buttonsStackView: UIStackView!
     @IBOutlet weak var userProfileCollectionView: UICollectionView!
     var imageURL : String?
     var posts = [Post]()
+    var userNameTitle : String?
+    var userId : String?
+    var target : Target = .OwnProfile
     override func viewDidLoad() {
         checkIfUserIsLogin()
         super.viewDidLoad()
-        navigationItem.title =   Auth.auth().currentUser?.uid ?? "User Profile"
+        navigationItem.title = userNameTitle ??  Auth.auth().currentUser?.uid ?? "User Profile"
+       // userName.text = userNameTitle ??  Auth.auth().currentUser?.uid ?? "User Profile"
         fetchUserData()
        // fetchOrderedUserPosts()
         //  tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: 0, right: -4)
@@ -64,8 +71,20 @@ class UserProfileViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        switch target {
+        case .Search:
+            navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.backward"), style: .plain, target: self, action: #selector(dismissVC))
+        default:
+            break
+        }
+        
+        
         //fetchUserData()
         // fetchUserPosts()
+    }
+    
+    @objc func dismissVC(){
+        self.dismiss(animated: true)
     }
     fileprivate func checkIfUserIsLogin(){
         if Auth.auth().currentUser == nil {
@@ -97,10 +116,14 @@ class UserProfileViewController: UIViewController {
     
     
     
-    var user : User?
+    var user : User?{
+        didSet{
+           // userName.text = user?.userName
+        }
+    }
     func fetchUserData(){
         
-        guard let uid = Auth.auth().currentUser?.uid else{return}
+         let uid = userId ?? Auth.auth().currentUser?.uid ?? ""
      Database.getUserWithID(uid: uid) {[weak self] dictionary in
           guard let self = self else {return}
           guard let dictionary = dictionary else {return}
